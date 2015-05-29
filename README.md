@@ -1,4 +1,3 @@
 # YMEFApp
 Official YMEF App
-
-Documentation
+ymefusa.org
