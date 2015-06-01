@@ -10,7 +10,6 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-//    test comment
 
     override func viewDidLoad() {
         super.viewDidLoad()
