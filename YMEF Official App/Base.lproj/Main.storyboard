@@ -100,12 +100,6 @@
                                     <constraint firstAttribute="height" constant="200" id="a8a-Is-hOX"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use this card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dq4-cP-UNN">
-                                <rect key="frame" x="130" y="104" width="339.5" height="40"/>
-                                <fontDescription key="fontDescription" name="Marion-Regular" family="Marion" pointSize="40"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KI-9q-dmk">
                                 <rect key="frame" x="544" y="20" width="40" height="30"/>
                                 <state key="normal" title="Close">
@@ -115,7 +109,7 @@
                                     <action selector="dismiss:" destination="MFF-4s-Lzq" eventType="touchUpInside" id="gYR-w7-5FB"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alq-7t-Myi">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alq-7t-Myi">
                                 <rect key="frame" x="16" y="236" width="568" height="168"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -125,9 +119,16 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use this card" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dq4-cP-UNN">
+                                <rect key="frame" x="215" y="115" width="170" height="20"/>
+                                <fontDescription key="fontDescription" name="Marion-Regular" family="Marion" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qPf-BQ-PFx" firstAttribute="top" secondItem="Dq4-cP-UNN" secondAttribute="bottom" constant="-107" id="0zB-g8-L7i"/>
                             <constraint firstItem="qPf-BQ-PFx" firstAttribute="top" secondItem="8Iy-1f-nuz" secondAttribute="top" constant="28" id="2H9-4r-P1u"/>
                             <constraint firstItem="8KI-9q-dmk" firstAttribute="top" secondItem="5AN-HW-D3e" secondAttribute="bottom" id="7nx-9K-QjI"/>
                             <constraint firstAttribute="centerX" secondItem="Dq4-cP-UNN" secondAttribute="centerX" id="Evu-bA-N9z"/>
@@ -135,10 +136,21 @@
                             <constraint firstItem="alq-7t-Myi" firstAttribute="top" secondItem="qPf-BQ-PFx" secondAttribute="bottom" constant="8" id="SVH-X1-lMU"/>
                             <constraint firstItem="qPf-BQ-PFx" firstAttribute="leading" secondItem="8Iy-1f-nuz" secondAttribute="leading" id="TOq-Rk-UXt"/>
                             <constraint firstItem="alq-7t-Myi" firstAttribute="leading" secondItem="8Iy-1f-nuz" secondAttribute="leadingMargin" id="bZI-AP-6xB"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Dq4-cP-UNN" secondAttribute="trailing" constant="236" id="bvL-Yd-Zw5"/>
                             <constraint firstItem="alq-7t-Myi" firstAttribute="trailing" secondItem="8Iy-1f-nuz" secondAttribute="trailingMargin" id="jNa-tw-f3P"/>
                             <constraint firstItem="8KI-9q-dmk" firstAttribute="leading" secondItem="qPf-BQ-PFx" secondAttribute="trailing" constant="-56" id="kvC-dO-gyP"/>
+                            <constraint firstAttribute="centerX" secondItem="Dq4-cP-UNN" secondAttribute="centerX" id="ll2-Me-S48"/>
+                            <constraint firstItem="Dq4-cP-UNN" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8Iy-1f-nuz" secondAttribute="leading" constant="236" id="mII-8D-nyD"/>
                             <constraint firstItem="Dq4-cP-UNN" firstAttribute="top" secondItem="qPf-BQ-PFx" secondAttribute="bottom" constant="-124" id="oMm-aH-Og5"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Evu-bA-N9z"/>
+                                <exclude reference="bvL-Yd-Zw5"/>
+                                <exclude reference="mII-8D-nyD"/>
+                                <exclude reference="oMm-aH-Og5"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5N-CT-udQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
