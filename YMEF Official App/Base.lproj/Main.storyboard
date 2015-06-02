@@ -94,23 +94,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="qPf-BQ-PFx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="qPf-BQ-PFx">
                                 <rect key="frame" x="0.0" y="28" width="600" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="a8a-Is-hOX"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use this card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dq4-cP-UNN">
-                                <rect key="frame" x="130.5" y="104" width="339.5" height="40"/>
+                                <rect key="frame" x="130" y="104" width="339.5" height="40"/>
                                 <fontDescription key="fontDescription" name="Marion-Regular" family="Marion" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJG-yv-dDd">
-                                <rect key="frame" x="16" y="273" width="568" height="100.5"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KI-9q-dmk">
@@ -122,6 +115,16 @@
                                     <action selector="dismiss:" destination="MFF-4s-Lzq" eventType="touchUpInside" id="gYR-w7-5FB"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alq-7t-Myi">
+                                <rect key="frame" x="16" y="236" width="568" height="168"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="dZl-Sg-Q5e"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -129,12 +132,12 @@
                             <constraint firstItem="8KI-9q-dmk" firstAttribute="top" secondItem="5AN-HW-D3e" secondAttribute="bottom" id="7nx-9K-QjI"/>
                             <constraint firstAttribute="centerX" secondItem="Dq4-cP-UNN" secondAttribute="centerX" id="Evu-bA-N9z"/>
                             <constraint firstAttribute="trailing" secondItem="qPf-BQ-PFx" secondAttribute="trailing" id="IIV-hY-3Ni"/>
-                            <constraint firstItem="rJG-yv-dDd" firstAttribute="leading" secondItem="8Iy-1f-nuz" secondAttribute="leadingMargin" id="JVU-Ce-TOK"/>
+                            <constraint firstItem="alq-7t-Myi" firstAttribute="top" secondItem="qPf-BQ-PFx" secondAttribute="bottom" constant="8" id="SVH-X1-lMU"/>
                             <constraint firstItem="qPf-BQ-PFx" firstAttribute="leading" secondItem="8Iy-1f-nuz" secondAttribute="leading" id="TOq-Rk-UXt"/>
+                            <constraint firstItem="alq-7t-Myi" firstAttribute="leading" secondItem="8Iy-1f-nuz" secondAttribute="leadingMargin" id="bZI-AP-6xB"/>
+                            <constraint firstItem="alq-7t-Myi" firstAttribute="trailing" secondItem="8Iy-1f-nuz" secondAttribute="trailingMargin" id="jNa-tw-f3P"/>
                             <constraint firstItem="8KI-9q-dmk" firstAttribute="leading" secondItem="qPf-BQ-PFx" secondAttribute="trailing" constant="-56" id="kvC-dO-gyP"/>
-                            <constraint firstItem="rJG-yv-dDd" firstAttribute="trailing" secondItem="8Iy-1f-nuz" secondAttribute="trailingMargin" id="mff-h4-tGA"/>
                             <constraint firstItem="Dq4-cP-UNN" firstAttribute="top" secondItem="qPf-BQ-PFx" secondAttribute="bottom" constant="-124" id="oMm-aH-Og5"/>
-                            <constraint firstItem="rJG-yv-dDd" firstAttribute="top" secondItem="qPf-BQ-PFx" secondAttribute="bottom" constant="45" id="otX-Mu-WRO"/>
                         </constraints>
                     </view>
                 </viewController>
