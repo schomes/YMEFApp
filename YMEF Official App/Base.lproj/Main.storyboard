@@ -214,7 +214,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k1-WX-FLr">
-                                <rect key="frame" x="16" y="288" width="107" height="23"/>
+                                <rect key="frame" x="16" y="291" width="107" height="17"/>
                                 <color key="backgroundColor" red="0.65731536632827914" green="0.86961748607074629" blue="0.92757654671717171" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="8"/>
                                 <state key="normal" title="READ OUR NEWSLETTER">
