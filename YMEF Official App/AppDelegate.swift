@@ -12,10 +12,28 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func uicolorFromHex(rgbValue:UInt32)->UIColor{
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        
+        return UIColor(red:red, green:green, blue:blue, alpha:1.0)
+    }
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        var navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.barTintColor = uicolorFromHex(0x273845)
+        
+        var tabBarAppearance = UITabBar.appearance()
+        tabBarAppearance.barTintColor = uicolorFromHex(0x273845)
+        
+        var tabButtonAppearance = UITabBar.appearance()
+        tabButtonAppearance.tintColor = uicolorFromHex(0xFFFFFF)
+        
         return true
     }
 

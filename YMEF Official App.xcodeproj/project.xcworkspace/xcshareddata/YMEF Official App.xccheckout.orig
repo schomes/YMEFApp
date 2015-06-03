@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
+	<string>F3FFC48F-6E79-4C7A-9A86-A47E5B40EF97</string>
+=======
 	<string>D1CA7D10-FCBE-412D-AD59-385507069B5E</string>
+>>>>>>> 102375e5496d4eab2830ee8699f69bf10e983e79
 	<key>IDESourceControlProjectName</key>
 	<string>YMEF Official App</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +38,11 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>5541ACFDAE27EB659F558ABB9BA0092746988042</string>
 			<key>IDESourceControlWCCName</key>
+<<<<<<< HEAD
 			<string>YMEF%20Official%20App</string>
+=======
+			<string>YMEFApp</string>
+>>>>>>> 102375e5496d4eab2830ee8699f69bf10e983e79
 		</dict>
 	</array>
 </dict>
