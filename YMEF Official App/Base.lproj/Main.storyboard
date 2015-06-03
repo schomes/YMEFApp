@@ -181,12 +181,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="s60-As-vdH" firstAttribute="top" secondItem="Mn8-xO-C2h" secondAttribute="top" id="kNs-cX-LiA"/>
-                            <constraint firstItem="s60-As-vdH" firstAttribute="top" secondItem="8bf-HS-Hta" secondAttribute="top" id="nfs-h0-3ZZ"/>
-                            <constraint firstItem="s60-As-vdH" firstAttribute="trailing" secondItem="Mn8-xO-C2h" secondAttribute="trailing" id="oCE-sc-xMM"/>
-                            <constraint firstItem="s60-As-vdH" firstAttribute="leading" secondItem="Mn8-xO-C2h" secondAttribute="leading" id="w3I-Vc-ntm"/>
-                            <constraint firstAttribute="trailing" secondItem="s60-As-vdH" secondAttribute="trailing" id="x0D-dc-zWE"/>
-                            <constraint firstItem="s60-As-vdH" firstAttribute="leading" secondItem="8bf-HS-Hta" secondAttribute="leading" id="zSq-VX-bBi"/>
+                            <constraint firstItem="s60-As-vdH" firstAttribute="leading" secondItem="8bf-HS-Hta" secondAttribute="leading" id="7KJ-eA-cfD"/>
+                            <constraint firstItem="Mn8-xO-C2h" firstAttribute="leading" secondItem="s60-As-vdH" secondAttribute="leading" id="VP4-Wz-7Qf"/>
+                            <constraint firstAttribute="trailing" secondItem="Mn8-xO-C2h" secondAttribute="trailing" id="ajt-Eb-xy6"/>
+                            <constraint firstItem="Mn8-xO-C2h" firstAttribute="trailing" secondItem="s60-As-vdH" secondAttribute="trailing" id="bbT-ug-OiH"/>
+                            <constraint firstItem="Mn8-xO-C2h" firstAttribute="top" secondItem="8bf-HS-Hta" secondAttribute="top" id="hcW-zU-OEL"/>
+                            <constraint firstItem="s60-As-vdH" firstAttribute="top" secondItem="Mn8-xO-C2h" secondAttribute="top" id="q4f-y4-nKJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Sm4-Gk-TMt"/>
@@ -207,23 +207,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQi-vg-fGB">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQi-vg-fGB">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="N5U-s5-fix"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k1-WX-FLr">
-                                <rect key="frame" x="16" y="291" width="107" height="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k1-WX-FLr">
+                                <rect key="frame" x="16" y="72" width="568" height="22"/>
                                 <color key="backgroundColor" red="0.65731536632827914" green="0.86961748607074629" blue="0.92757654671717171" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="YVm-LT-RLo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
                                 <state key="normal" title="READ OUR NEWSLETTER">
                                     <color key="titleColor" red="1" green="0.97488633736372798" blue="0.98751658682632304" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="0.97488633739999997" blue="0.98751658679999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="het-ul-60l">
+                                <rect key="frame" x="16" y="102" width="568" height="441"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="het-ul-60l" firstAttribute="leading" secondItem="4k1-WX-FLr" secondAttribute="leading" id="TMk-BZ-nnJ"/>
+                            <constraint firstItem="4k1-WX-FLr" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="TS2-zf-Uwq"/>
+                            <constraint firstItem="4k1-WX-FLr" firstAttribute="centerX" secondItem="FQi-vg-fGB" secondAttribute="centerX" id="Uj7-va-Ddc"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="het-ul-60l" secondAttribute="bottom" constant="8" symbolic="YES" id="Yrg-a9-kWS"/>
+                            <constraint firstItem="4k1-WX-FLr" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="ryX-Z8-7dY"/>
+                            <constraint firstItem="het-ul-60l" firstAttribute="top" secondItem="4k1-WX-FLr" secondAttribute="bottom" constant="8" symbolic="YES" id="tJb-iE-X9g"/>
+                            <constraint firstItem="het-ul-60l" firstAttribute="centerX" secondItem="FQi-vg-fGB" secondAttribute="centerX" id="w9P-ax-9vf"/>
+                            <constraint firstItem="4k1-WX-FLr" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" symbolic="YES" id="wO4-bz-GuQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EIS-BF-bCB"/>
                 </viewController>
