@@ -12,8 +12,10 @@ class EventsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        let pattern_bg = UIImage(named: "light_bg.png")
+        view.backgroundColor = UIColor(patternImage: pattern_bg!)
     }
 
     override func didReceiveMemoryWarning() {
