@@ -213,44 +213,43 @@
                                     <navigationItem title="Title" id="N5U-s5-fix"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k1-WX-FLr">
-                                <rect key="frame" x="16" y="72" width="278" height="25"/>
-                                <color key="backgroundColor" red="0.65731536632827914" green="0.86961748607074629" blue="0.92757654671717171" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="278" id="tjr-SV-dTm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
-                                <state key="normal" title="NEWSLETTER">
-                                    <color key="titleColor" red="1" green="0.97488633736372798" blue="0.98751658682632304" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="0.97488633739999997" blue="0.98751658679999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahL-3K-iHl">
-                                <rect key="frame" x="306" y="72" width="278" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLt-K6-yPL">
+                                <rect key="frame" x="314" y="72" width="270" height="29"/>
                                 <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
-                                <state key="normal" title="BLOG">
-                                    <color key="titleColor" red="1" green="0.97488633739999997" blue="0.98751658679999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="0.97488633739999997" blue="0.98751658679999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                <state key="normal" title="NEWSLETTER">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYO-RI-G0z">
-                                <rect key="frame" x="16" y="105" width="568" height="446"/>
-                                <color key="backgroundColor" red="1" green="0.97488633739999997" blue="0.98751658679999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdc-5E-6jt">
+                                <rect key="frame" x="16" y="72" width="270" height="30"/>
+                                <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="EmX-rn-N31"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                <state key="normal" title="BLOG">
+                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yV1-Wn-OPc">
+                                <rect key="frame" x="16" y="108" width="568" height="443"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4k1-WX-FLr" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="IdZ-Bd-6sj"/>
-                            <constraint firstItem="ahL-3K-iHl" firstAttribute="leading" secondItem="4k1-WX-FLr" secondAttribute="trailing" constant="12" id="MlG-06-WpK"/>
-                            <constraint firstItem="tYO-RI-G0z" firstAttribute="trailing" secondItem="ahL-3K-iHl" secondAttribute="trailing" id="XIO-sw-JkQ"/>
-                            <constraint firstItem="4k1-WX-FLr" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="YIZ-be-fmg"/>
-                            <constraint firstItem="ahL-3K-iHl" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="dWD-ey-UdN"/>
-                            <constraint firstItem="tYO-RI-G0z" firstAttribute="leading" secondItem="4k1-WX-FLr" secondAttribute="leading" id="eoR-7U-k0c"/>
-                            <constraint firstItem="tYO-RI-G0z" firstAttribute="centerX" secondItem="FQi-vg-fGB" secondAttribute="centerX" id="jXv-g0-zbm"/>
-                            <constraint firstItem="tYO-RI-G0z" firstAttribute="top" secondItem="4k1-WX-FLr" secondAttribute="bottom" constant="8" symbolic="YES" id="kxb-o1-hgI"/>
-                            <constraint firstItem="ahL-3K-iHl" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="uGy-w6-pUN"/>
-                            <constraint firstItem="tYO-RI-G0z" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="vOs-en-OeE"/>
+                            <constraint firstItem="fLt-K6-yPL" firstAttribute="trailing" secondItem="yV1-Wn-OPc" secondAttribute="trailing" id="6Or-xU-3fg"/>
+                            <constraint firstItem="yV1-Wn-OPc" firstAttribute="top" secondItem="Gdc-5E-6jt" secondAttribute="bottom" constant="6" id="HgD-6K-VSq"/>
+                            <constraint firstItem="fLt-K6-yPL" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="MM5-wg-iA3"/>
+                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Mhv-2v-rFn"/>
+                            <constraint firstItem="yV1-Wn-OPc" firstAttribute="centerX" secondItem="FQi-vg-fGB" secondAttribute="centerX" id="Q82-4d-fBE"/>
+                            <constraint firstItem="fLt-K6-yPL" firstAttribute="leading" secondItem="Gdc-5E-6jt" secondAttribute="trailing" constant="28" id="QrX-A9-THk"/>
+                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="top" secondItem="fLt-K6-yPL" secondAttribute="top" id="Wi7-N3-EUL"/>
+                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="leading" secondItem="yV1-Wn-OPc" secondAttribute="leading" id="XCj-MO-cXz"/>
+                            <constraint firstItem="yV1-Wn-OPc" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="i4l-S3-TLH"/>
+                            <constraint firstItem="yV1-Wn-OPc" firstAttribute="top" secondItem="fLt-K6-yPL" secondAttribute="bottom" constant="7" id="jsu-gH-sNW"/>
+                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" symbolic="YES" id="l5A-JA-CvT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EIS-BF-bCB"/>
