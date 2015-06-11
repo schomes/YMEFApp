@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Card-->
+        <!--info-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyw-NC-Bju">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyw-NC-Bju">
                                 <rect key="frame" x="16" y="354" width="160" height="30"/>
                                 <state key="normal" title="how do I use this card?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,7 +76,7 @@
                             <constraint firstItem="Zc7-0x-yLA" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="28" id="taL-VZ-WIo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Card" image="coupon_icon" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="info" image="coupon_icon" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,14 +178,22 @@
                                     <navigationItem title="Title" id="nae-wa-N7U"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jx-mf-zAN">
+                                <rect key="frame" x="277" y="72" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="s60-As-vdH" firstAttribute="leading" secondItem="8bf-HS-Hta" secondAttribute="leading" id="7KJ-eA-cfD"/>
+                            <constraint firstItem="8Jx-mf-zAN" firstAttribute="top" secondItem="8bf-HS-Hta" secondAttribute="top" constant="72" id="9Pf-my-luH"/>
                             <constraint firstItem="Mn8-xO-C2h" firstAttribute="leading" secondItem="s60-As-vdH" secondAttribute="leading" id="VP4-Wz-7Qf"/>
                             <constraint firstAttribute="trailing" secondItem="Mn8-xO-C2h" secondAttribute="trailing" id="ajt-Eb-xy6"/>
                             <constraint firstItem="Mn8-xO-C2h" firstAttribute="trailing" secondItem="s60-As-vdH" secondAttribute="trailing" id="bbT-ug-OiH"/>
                             <constraint firstItem="Mn8-xO-C2h" firstAttribute="top" secondItem="8bf-HS-Hta" secondAttribute="top" id="hcW-zU-OEL"/>
+                            <constraint firstAttribute="centerX" secondItem="8Jx-mf-zAN" secondAttribute="centerX" id="k9z-bS-dbO"/>
                             <constraint firstItem="s60-As-vdH" firstAttribute="top" secondItem="Mn8-xO-C2h" secondAttribute="top" id="q4f-y4-nKJ"/>
                         </constraints>
                     </view>
@@ -207,7 +215,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQi-vg-fGB">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQi-vg-fGB">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="N5U-s5-fix"/>
@@ -216,40 +224,54 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLt-K6-yPL">
                                 <rect key="frame" x="314" y="72" width="270" height="29"/>
                                 <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="2GO-Tf-EeJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                 <state key="normal" title="NEWSLETTER">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdc-5E-6jt">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdc-5E-6jt">
                                 <rect key="frame" x="16" y="72" width="270" height="30"/>
                                 <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="270" id="EmX-rn-N31"/>
+                                    <constraint firstAttribute="height" constant="30" id="wdF-rK-I0e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                 <state key="normal" title="BLOG">
                                     <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yV1-Wn-OPc">
-                                <rect key="frame" x="16" y="108" width="568" height="443"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PWq-nN-iTJ">
+                                <rect key="frame" x="16" y="110" width="568" height="433"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RIn-mi-Mbr">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="85J-AT-x0K">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fLt-K6-yPL" firstAttribute="trailing" secondItem="yV1-Wn-OPc" secondAttribute="trailing" id="6Or-xU-3fg"/>
-                            <constraint firstItem="yV1-Wn-OPc" firstAttribute="top" secondItem="Gdc-5E-6jt" secondAttribute="bottom" constant="6" id="HgD-6K-VSq"/>
-                            <constraint firstItem="fLt-K6-yPL" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="MM5-wg-iA3"/>
-                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Mhv-2v-rFn"/>
-                            <constraint firstItem="yV1-Wn-OPc" firstAttribute="centerX" secondItem="FQi-vg-fGB" secondAttribute="centerX" id="Q82-4d-fBE"/>
-                            <constraint firstItem="fLt-K6-yPL" firstAttribute="leading" secondItem="Gdc-5E-6jt" secondAttribute="trailing" constant="28" id="QrX-A9-THk"/>
-                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="top" secondItem="fLt-K6-yPL" secondAttribute="top" id="Wi7-N3-EUL"/>
-                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="leading" secondItem="yV1-Wn-OPc" secondAttribute="leading" id="XCj-MO-cXz"/>
-                            <constraint firstItem="yV1-Wn-OPc" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="i4l-S3-TLH"/>
-                            <constraint firstItem="yV1-Wn-OPc" firstAttribute="top" secondItem="fLt-K6-yPL" secondAttribute="bottom" constant="7" id="jsu-gH-sNW"/>
-                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" symbolic="YES" id="l5A-JA-CvT"/>
+                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="72" id="3VN-0m-CJR"/>
+                            <constraint firstItem="fLt-K6-yPL" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="72" id="B9x-3c-uAn"/>
+                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="width" secondItem="fLt-K6-yPL" secondAttribute="width" id="Bsj-xR-Awy"/>
+                            <constraint firstItem="fLt-K6-yPL" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Gdc-5E-6jt" secondAttribute="trailing" constant="28" id="VA9-ZP-JN3"/>
+                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="kgk-9T-PKT"/>
+                            <constraint firstItem="fLt-K6-yPL" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="xjZ-o3-dqX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EIS-BF-bCB"/>
@@ -270,19 +292,19 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="vSx-jE-DGy" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="qZ0-8U-xOK" kind="relationship" relationship="viewControllers" id="eKa-XH-PGr"/>
+                        <segue destination="vSx-jE-DGy" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Blog-->
+        <!--Navigation Controller-->
         <scene sceneID="eKH-me-wJk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vSx-jE-DGy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Blog" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="" image="second" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sdp-cG-EMw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -297,11 +319,11 @@
             </objects>
             <point key="canvasLocation" x="1562" y="360"/>
         </scene>
-        <!--Events-->
+        <!--Navigation Controller-->
         <scene sceneID="bDK-i6-R1k">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qZ0-8U-xOK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" image="second" id="cJs-QD-IA8"/>
+                    <tabBarItem key="tabBarItem" title="" image="second" id="cJs-QD-IA8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zbc-wJ-Yxv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
