@@ -179,7 +179,6 @@
                                 <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="2GO-Tf-EeJ"/>
-                                    <constraint firstAttribute="width" constant="280" id="lXN-2e-AGO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                                 <state key="normal" title="NEWSLETTER">
@@ -190,7 +189,6 @@
                                 <rect key="frame" x="16" y="72" width="280" height="18"/>
                                 <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="0qm-fl-s2G"/>
                                     <constraint firstAttribute="height" constant="18" id="wdF-rK-I0e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
