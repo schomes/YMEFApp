@@ -174,37 +174,26 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQi-vg-fGB">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLt-K6-yPL">
-                                <rect key="frame" x="304" y="72" width="280" height="18"/>
-                                <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="2GO-Tf-EeJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
-                                <state key="normal" title="NEWSLETTER">
-                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdc-5E-6jt">
-                                <rect key="frame" x="16" y="72" width="280" height="18"/>
-                                <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="wdF-rK-I0e"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
-                                <state key="normal" title="BLOG">
-                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="500" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JGD-QI-8Zp">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlogCell" rowHeight="500" id="V0D-uY-dNH">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V0D-uY-dNH" id="mLb-vc-AUh">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="72" id="3VN-0m-CJR"/>
-                            <constraint firstItem="fLt-K6-yPL" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="72" id="B9x-3c-uAn"/>
-                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="width" secondItem="fLt-K6-yPL" secondAttribute="width" id="Bsj-xR-Awy"/>
-                            <constraint firstItem="fLt-K6-yPL" firstAttribute="leading" secondItem="Gdc-5E-6jt" secondAttribute="trailing" constant="8" id="N7v-pE-rdv"/>
-                            <constraint firstItem="Gdc-5E-6jt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="kgk-9T-PKT"/>
-                            <constraint firstItem="fLt-K6-yPL" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="xjZ-o3-dqX"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="JGD-QI-8Zp" secondAttribute="bottom" id="Tof-dg-l8w"/>
+                            <constraint firstItem="JGD-QI-8Zp" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="WhW-k2-2Kz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JGD-QI-8Zp" secondAttribute="trailing" constant="-16" id="Xpk-2l-CY8"/>
+                            <constraint firstItem="JGD-QI-8Zp" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-16" id="c2i-H0-q9P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EIS-BF-bCB"/>
@@ -227,11 +216,56 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="vSx-jE-DGy" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="WpT-VD-OIA" kind="relationship" relationship="viewControllers" id="21y-ak-GoD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Upcoming Events-->
+        <scene sceneID="xn1-Rc-hBC">
+            <objects>
+                <tableViewController id="4DG-zK-D1i" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ykv-xY-kA0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nnf-bH-cEs">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nnf-bH-cEs" id="ba2-pf-kLd">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4DG-zK-D1i" id="uif-6W-cWu"/>
+                            <outlet property="delegate" destination="4DG-zK-D1i" id="57B-w4-Adl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Upcoming Events" id="9k7-DV-qTz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8J-7p-HWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="809"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GbJ-GS-TZC">
+            <objects>
+                <navigationController id="WpT-VD-OIA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="3Ff-Zq-0rI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kcc-Pm-EWr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4DG-zK-D1i" kind="relationship" relationship="rootViewController" id="zR6-cu-GF1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1B1-Nr-6qe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="809"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eKH-me-wJk">
