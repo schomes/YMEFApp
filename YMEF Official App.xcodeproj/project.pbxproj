@@ -15,6 +15,7 @@
 		53912E6C1B17E63900100F5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53912E6B1B17E63900100F5A /* Images.xcassets */; };
 		53912E6F1B17E63900100F5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53912E6D1B17E63900100F5A /* LaunchScreen.xib */; };
 		53912E7B1B17E63900100F5A /* YMEF_Official_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53912E7A1B17E63900100F5A /* YMEF_Official_AppTests.swift */; };
+		53ACFDC51B5B4BC200645286 /* AboutNavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACFDC41B5B4BC200645286 /* AboutNavigationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		53912E741B17E63900100F5A /* YMEF Official AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YMEF Official AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53912E791B17E63900100F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53912E7A1B17E63900100F5A /* YMEF_Official_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMEF_Official_AppTests.swift; sourceTree = "<group>"; };
+		53ACFDC41B5B4BC200645286 /* AboutNavigationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutNavigationTableViewController.swift; path = ../AboutNavigationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				53912E661B17E63900100F5A /* SecondViewController.swift */,
 				53912E681B17E63900100F5A /* Main.storyboard */,
 				534330DE1B1AE5DF00CA8745 /* CardInfoViewController.swift */,
+				53ACFDC41B5B4BC200645286 /* AboutNavigationTableViewController.swift */,
 				53912E6B1B17E63900100F5A /* Images.xcassets */,
 				53912E6D1B17E63900100F5A /* LaunchScreen.xib */,
 				53912E601B17E63900100F5A /* Supporting Files */,
@@ -222,6 +225,7 @@
 				534330DF1B1AE5DF00CA8745 /* CardInfoViewController.swift in Sources */,
 				53912E631B17E63900100F5A /* AppDelegate.swift in Sources */,
 				53912E651B17E63900100F5A /* FirstViewController.swift in Sources */,
+				53ACFDC51B5B4BC200645286 /* AboutNavigationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
