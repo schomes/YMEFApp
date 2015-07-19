@@ -210,14 +210,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfS-Ia-AOy">
-                                <rect key="frame" x="279" y="139" width="46" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mission_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pXB-x2-sVL">
+                                <rect key="frame" x="0.0" y="64" width="600" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="VWk-fh-ij7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting on a high note" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfS-Ia-AOy">
+                                <rect key="frame" x="213" y="127" width="175" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xfS-Ia-AOy" firstAttribute="top" secondItem="CqB-Za-EAY" secondAttribute="bottom" constant="63" id="Dvw-2b-TjQ"/>
+                            <constraint firstAttribute="centerX" secondItem="xfS-Ia-AOy" secondAttribute="centerX" id="OkI-Fd-QKO"/>
+                            <constraint firstAttribute="trailing" secondItem="pXB-x2-sVL" secondAttribute="trailing" id="Yh9-Re-BAy"/>
+                            <constraint firstItem="pXB-x2-sVL" firstAttribute="top" secondItem="FfF-Vg-QJN" secondAttribute="top" constant="64" id="dsF-Te-hSW"/>
+                            <constraint firstItem="pXB-x2-sVL" firstAttribute="leading" secondItem="FfF-Vg-QJN" secondAttribute="leading" id="qcJ-qq-tsE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cmr-gA-D5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
