@@ -30,12 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barTintColor = uicolorFromHex(0x273845)
         
-        var tabBarAppearance = UITabBar.appearance()
-        tabBarAppearance.barTintColor = uicolorFromHex(0x273845)
-        
-        var tabButtonAppearance = UITabBar.appearance()
-        tabButtonAppearance.tintColor = uicolorFromHex(0xFFFFFF)
-        
         return true
     }
 
