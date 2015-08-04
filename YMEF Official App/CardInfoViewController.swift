@@ -18,6 +18,9 @@ class CardInfoViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let image = UIImage(named: "logo_YMEF.png")
+        navigationItem.titleView = UIImageView(image: image)
     }
 
     override func didReceiveMemoryWarning() {

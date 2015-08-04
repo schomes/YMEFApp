@@ -17,6 +17,9 @@ class SecondViewController: UIViewController {
         // set background pattern for SecondViewController
         let pattern_bg = UIImage(named: "light_bg.png")
         view.backgroundColor = UIColor(patternImage: pattern_bg!)
+        
+        let image = UIImage(named: "logo_YMEF.png")
+        navigationItem.titleView = UIImageView(image: image)
     }
 
     override func didReceiveMemoryWarning() {
