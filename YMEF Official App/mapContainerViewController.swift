@@ -5,6 +5,12 @@
 //  Created by David Schommer on 8/5/15.
 //  Copyright (c) 2015 YMEF. All rights reserved.
 //
+// Created with help from these resources:
+// Map View - Current Location in Swift - Xcode 7 iOS 9 Tutorial
+// https://www.youtube.com/watch?v=qrdIL44T6FQ
+//
+// Mapkit Tutorial: Getting Started
+// http://www.raywenderlich.com/90971/introduction-mapkit-swift-tutorial
 
 import UIKit
 import MapKit
@@ -16,9 +22,6 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
     @IBOutlet weak var mapView: MKMapView!
     
     @IBAction func showCurrentLocation(sender: AnyObject) {
-//        var currentLocation = 
-//        centerMapOnLocation(location: currentLocation)
-        
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
         self.locationManager.startUpdatingLocation()
