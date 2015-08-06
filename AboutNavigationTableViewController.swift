@@ -12,6 +12,9 @@ class AboutNavigationTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var image = UIImage(named: "logo_YMEF.png")
+        self.navigationItem.titleView = UIImageView(image: image)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
