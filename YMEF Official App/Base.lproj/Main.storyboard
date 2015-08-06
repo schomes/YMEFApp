@@ -273,7 +273,7 @@
             </objects>
             <point key="canvasLocation" x="-460" y="414"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="vZ1-uq-dfS">
             <objects>
                 <viewController id="efw-S6-Jnj" sceneMemberID="viewController">
@@ -294,7 +294,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7dO-GR-WaN"/>
+                    <tabBarItem key="tabBarItem" title="" id="7dO-GR-WaN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJG-pf-EQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -304,7 +304,7 @@
         <scene sceneID="7g4-bQ-bi8">
             <objects>
                 <navigationController id="gPp-n1-CWZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="q9U-iL-SUJ"/>
+                    <tabBarItem key="tabBarItem" id="q9U-iL-SUJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Se0-VY-kjG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -375,7 +375,9 @@
                             <constraint firstItem="FrW-np-Qmn" firstAttribute="top" secondItem="gR0-Te-jDz" secondAttribute="top" id="yQx-vC-5sN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="tab_icon-map" id="lpL-r0-Oqr"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_icon-map" id="lpL-r0-Oqr">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="mapView" destination="gPk-c2-qqF" id="7tL-US-CcC"/>
                     </connections>
@@ -422,4 +424,5 @@
         <image name="placeholder" width="250" height="250"/>
         <image name="tab_icon-map" width="30" height="30"/>
     </resources>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
