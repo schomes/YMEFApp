@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="x1G-6E-jbc" customClass="AboutNavigationTableViewController" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="thJ-ug-fUM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -145,17 +145,17 @@
                         <viewControllerLayoutGuide type="bottom" id="M4K-sX-K29"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FfF-Vg-QJN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mission_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pXB-x2-sVL">
-                                <rect key="frame" x="0.0" y="64" width="600" height="147"/>
+                                <rect key="frame" x="0.0" y="64" width="500" height="147"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="147" id="VWk-fh-ij7"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting on a high note" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfS-Ia-AOy">
-                                <rect key="frame" x="213" y="127" width="175" height="21"/>
+                                <rect key="frame" x="163" y="127" width="175" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -184,7 +184,7 @@
                         <viewControllerLayoutGuide type="bottom" id="XZx-5B-B18"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SuG-Bo-qBb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volunteer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP8-oK-Xbb">
@@ -210,7 +210,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Rnw-iV-yvW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sXH-vz-Icb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="get-7U-jei">
@@ -236,7 +236,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VSU-KU-Pjh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nk0-Dr-ZnG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfU-lF-BgG">
@@ -258,6 +258,8 @@
             <objects>
                 <tabBarController id="F40-rn-ULf" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="500"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="6vN-IC-dYl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -282,7 +284,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jc1-eN-7xL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PUU-cF-QTU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blog" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLV-7c-6MO">
@@ -326,18 +328,19 @@
                         <viewControllerLayoutGuide type="bottom" id="Ip7-Xd-YOg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gR0-Te-jDz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gPk-c2-qqF">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gPk-c2-qqF">
+                                <rect key="frame" x="0.0" y="64" width="500" height="387"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gPk-c2-qqF" secondAttribute="trailing" id="h1q-us-cd5"/>
-                            <constraint firstItem="gPk-c2-qqF" firstAttribute="leading" secondItem="gR0-Te-jDz" secondAttribute="leading" id="iEC-9a-HYM"/>
-                            <constraint firstAttribute="bottom" secondItem="gPk-c2-qqF" secondAttribute="bottom" constant="49" id="p47-3e-vOg"/>
+                            <constraint firstItem="gPk-c2-qqF" firstAttribute="leading" secondItem="gR0-Te-jDz" secondAttribute="leading" id="4vR-iW-3UR"/>
+                            <constraint firstItem="gPk-c2-qqF" firstAttribute="top" secondItem="DfA-1v-Fl6" secondAttribute="bottom" id="ao7-vG-6wN"/>
+                            <constraint firstAttribute="trailing" secondItem="gPk-c2-qqF" secondAttribute="trailing" id="d2B-Jt-cMd"/>
+                            <constraint firstItem="gPk-c2-qqF" firstAttribute="bottom" secondItem="Ip7-Xd-YOg" secondAttribute="top" id="lMn-NU-AAw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="skC-6X-vol"/>
