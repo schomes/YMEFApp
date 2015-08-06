@@ -343,7 +343,21 @@
                             <constraint firstItem="gPk-c2-qqF" firstAttribute="bottom" secondItem="Ip7-Xd-YOg" secondAttribute="top" id="lMn-NU-AAw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="skC-6X-vol"/>
+                    <navigationItem key="navigationItem" id="skC-6X-vol">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="hKd-fr-Ygo">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TBj-TI-3Hb">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="1"/>
+                                <state key="normal" image="current_location_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCurrentLocation:" destination="qjL-8y-s0w" eventType="touchUpInside" id="WpH-E3-GHD"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="gPk-c2-qqF" id="7tL-US-CcC"/>
                     </connections>
@@ -395,6 +409,7 @@
     </scenes>
     <resources>
         <image name="contactIcon" width="250" height="250"/>
+        <image name="current_location_icon" width="30" height="30"/>
         <image name="donate_icon" width="250" height="250"/>
         <image name="mission_icon" width="250" height="250"/>
         <image name="placeholder" width="250" height="250"/>
