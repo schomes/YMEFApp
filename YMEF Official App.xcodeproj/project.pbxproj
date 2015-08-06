@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5318E0A91B72EFEE00967FD9 /* mapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */; };
 		534330DF1B1AE5DF00CA8745 /* CardInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534330DE1B1AE5DF00CA8745 /* CardInfoViewController.swift */; };
 		53912E631B17E63900100F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53912E621B17E63900100F5A /* AppDelegate.swift */; };
 		53912E651B17E63900100F5A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53912E641B17E63900100F5A /* FirstViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapContainerViewController.swift; sourceTree = "<group>"; };
 		534330DE1B1AE5DF00CA8745 /* CardInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInfoViewController.swift; sourceTree = "<group>"; };
 		53912E5D1B17E63900100F5A /* YMEF Official App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YMEF Official App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53912E611B17E63900100F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				53912E641B17E63900100F5A /* FirstViewController.swift */,
 				53912E661B17E63900100F5A /* SecondViewController.swift */,
 				53912E681B17E63900100F5A /* Main.storyboard */,
+				5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */,
 				534330DE1B1AE5DF00CA8745 /* CardInfoViewController.swift */,
 				53ACFDC41B5B4BC200645286 /* AboutNavigationTableViewController.swift */,
 				53912E6B1B17E63900100F5A /* Images.xcassets */,
@@ -225,6 +228,7 @@
 				534330DF1B1AE5DF00CA8745 /* CardInfoViewController.swift in Sources */,
 				53912E631B17E63900100F5A /* AppDelegate.swift in Sources */,
 				53912E651B17E63900100F5A /* FirstViewController.swift in Sources */,
+				5318E0A91B72EFEE00967FD9 /* mapContainerViewController.swift in Sources */,
 				53ACFDC51B5B4BC200645286 /* AboutNavigationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
