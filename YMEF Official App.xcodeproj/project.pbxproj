@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5318E0A91B72EFEE00967FD9 /* mapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */; };
-		534330DF1B1AE5DF00CA8745 /* CardInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534330DE1B1AE5DF00CA8745 /* CardInfoViewController.swift */; };
 		53912E631B17E63900100F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53912E621B17E63900100F5A /* AppDelegate.swift */; };
-		53912E651B17E63900100F5A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53912E641B17E63900100F5A /* FirstViewController.swift */; };
-		53912E671B17E63900100F5A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53912E661B17E63900100F5A /* SecondViewController.swift */; };
 		53912E6A1B17E63900100F5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53912E681B17E63900100F5A /* Main.storyboard */; };
 		53912E6C1B17E63900100F5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53912E6B1B17E63900100F5A /* Images.xcassets */; };
 		53912E6F1B17E63900100F5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53912E6D1B17E63900100F5A /* LaunchScreen.xib */; };
 		53912E7B1B17E63900100F5A /* YMEF_Official_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53912E7A1B17E63900100F5A /* YMEF_Official_AppTests.swift */; };
 		53ACFDC51B5B4BC200645286 /* AboutNavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACFDC41B5B4BC200645286 /* AboutNavigationTableViewController.swift */; };
+		CCF4E4461B740D140008D9C5 /* blogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF4E4451B740D140008D9C5 /* blogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +29,9 @@
 
 /* Begin PBXFileReference section */
 		5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapContainerViewController.swift; sourceTree = "<group>"; };
-		534330DE1B1AE5DF00CA8745 /* CardInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInfoViewController.swift; sourceTree = "<group>"; };
 		53912E5D1B17E63900100F5A /* YMEF Official App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YMEF Official App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53912E611B17E63900100F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53912E621B17E63900100F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53912E641B17E63900100F5A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		53912E661B17E63900100F5A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		53912E691B17E63900100F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53912E6B1B17E63900100F5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		53912E6E1B17E63900100F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,6 +39,7 @@
 		53912E791B17E63900100F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53912E7A1B17E63900100F5A /* YMEF_Official_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMEF_Official_AppTests.swift; sourceTree = "<group>"; };
 		53ACFDC41B5B4BC200645286 /* AboutNavigationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutNavigationTableViewController.swift; path = ../AboutNavigationTableViewController.swift; sourceTree = "<group>"; };
+		CCF4E4451B740D140008D9C5 /* blogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				53912E621B17E63900100F5A /* AppDelegate.swift */,
-				53912E641B17E63900100F5A /* FirstViewController.swift */,
-				53912E661B17E63900100F5A /* SecondViewController.swift */,
 				53912E681B17E63900100F5A /* Main.storyboard */,
+				CCF4E4451B740D140008D9C5 /* blogViewController.swift */,
 				5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */,
-				534330DE1B1AE5DF00CA8745 /* CardInfoViewController.swift */,
 				53ACFDC41B5B4BC200645286 /* AboutNavigationTableViewController.swift */,
 				53912E6B1B17E63900100F5A /* Images.xcassets */,
 				53912E6D1B17E63900100F5A /* LaunchScreen.xib */,
@@ -224,11 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53912E671B17E63900100F5A /* SecondViewController.swift in Sources */,
-				534330DF1B1AE5DF00CA8745 /* CardInfoViewController.swift in Sources */,
 				53912E631B17E63900100F5A /* AppDelegate.swift in Sources */,
-				53912E651B17E63900100F5A /* FirstViewController.swift in Sources */,
 				5318E0A91B72EFEE00967FD9 /* mapContainerViewController.swift in Sources */,
+				CCF4E4461B740D140008D9C5 /* blogViewController.swift in Sources */,
 				53ACFDC51B5B4BC200645286 /* AboutNavigationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

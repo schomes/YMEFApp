@@ -28,6 +28,9 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var image = UIImage(named: "logo_YMEF.png")
+        self.navigationItem.titleView = UIImageView(image: image)
+        
         let initialLocation = CLLocation(latitude: 44.9747, longitude: -93.2354)
         centerMapOnLocation(initialLocation)
         
@@ -86,11 +89,6 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
         print("Errors: \(error.localizedDescription)")
     }
     
-    
-    
-    
-    
-
     /*
     // MARK: - Navigation
 

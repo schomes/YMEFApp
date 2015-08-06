@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="x1G-6E-jbc" customClass="AboutNavigationTableViewController" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="thJ-ug-fUM">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -145,7 +145,7 @@
                         <viewControllerLayoutGuide type="bottom" id="M4K-sX-K29"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FfF-Vg-QJN">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mission_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pXB-x2-sVL">
@@ -184,7 +184,7 @@
                         <viewControllerLayoutGuide type="bottom" id="XZx-5B-B18"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SuG-Bo-qBb">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volunteer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP8-oK-Xbb">
@@ -210,7 +210,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Rnw-iV-yvW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sXH-vz-Icb">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="get-7U-jei">
@@ -236,7 +236,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VSU-KU-Pjh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nk0-Dr-ZnG">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfU-lF-BgG">
@@ -259,7 +259,7 @@
                 <tabBarController id="F40-rn-ULf" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="500" height="500"/>
+                    <size key="freeformSize" width="500" height="600"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="6vN-IC-dYl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -275,16 +275,16 @@
             </objects>
             <point key="canvasLocation" x="-460" y="414"/>
         </scene>
-        <!--View Controller-->
+        <!--Blog View Controller-->
         <scene sceneID="vZ1-uq-dfS">
             <objects>
-                <viewController id="efw-S6-Jnj" sceneMemberID="viewController">
+                <viewController id="efw-S6-Jnj" customClass="blogViewController" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Os-WL-cDt"/>
                         <viewControllerLayoutGuide type="bottom" id="jc1-eN-7xL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PUU-cF-QTU">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blog" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLV-7c-6MO">
@@ -300,7 +300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJG-pf-EQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1307" y="1434"/>
+            <point key="canvasLocation" x="1363" y="1434"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7g4-bQ-bi8">
@@ -328,11 +328,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Ip7-Xd-YOg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gR0-Te-jDz">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gPk-c2-qqF">
-                                <rect key="frame" x="0.0" y="64" width="500" height="387"/>
+                                <rect key="frame" x="0.0" y="64" width="500" height="487"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -351,34 +351,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOO-Oc-rzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1508" y="672"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="jzt-Cq-4q3">
-            <objects>
-                <viewController id="ymZ-NS-Kcy" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GRy-UU-MdK"/>
-                        <viewControllerLayoutGuide type="bottom" id="yEk-Ef-VGf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aJy-pw-GBj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzP-sk-yAu">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cr8-oV-MSX">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2ca-Cf-S9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2232" y="672"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s5n-ob-7mg">
@@ -407,7 +379,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kbz-Fd-odz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="7dO-GR-WaN"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E5c-8r-Qfs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E5c-8r-Qfs" propertyAccessControl="all">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
