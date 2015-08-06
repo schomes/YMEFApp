@@ -344,14 +344,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="skC-6X-vol">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="hKd-fr-Ygo">
+                        <barButtonItem key="leftBarButtonItem" style="done" id="hKd-fr-Ygo">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TBj-TI-3Hb">
                                 <rect key="frame" x="16" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="1"/>
-                                <state key="normal" image="current_location_icon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" image="current_location_icon"/>
                                 <connections>
                                     <action selector="showCurrentLocation:" destination="qjL-8y-s0w" eventType="touchUpInside" id="WpH-E3-GHD"/>
                                 </connections>
