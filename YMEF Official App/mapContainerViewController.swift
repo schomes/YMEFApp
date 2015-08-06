@@ -28,7 +28,7 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+        let initialLocation = CLLocation(latitude: 44.9747, longitude: -93.2354)
         centerMapOnLocation(initialLocation)
         
     }
