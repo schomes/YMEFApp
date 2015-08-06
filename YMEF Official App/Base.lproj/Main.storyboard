@@ -301,9 +301,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrW-np-Qmn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjW-Bs-3bm">
-                                        <rect key="frame" x="553" y="26" width="39" height="30"/>
-                                        <state key="normal" title="Menu">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjW-Bs-3bm">
+                                        <rect key="frame" x="521" y="31" width="71" height="25"/>
+                                        <state key="normal" image="card_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -330,7 +330,7 @@
                             <constraint firstItem="FrW-np-Qmn" firstAttribute="top" secondItem="gR0-Te-jDz" secondAttribute="top" id="yQx-vC-5sN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="lpL-r0-Oqr"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="tab_icon-map" id="lpL-r0-Oqr"/>
                     <connections>
                         <outlet property="mapView" destination="gPk-c2-qqF" id="7tL-US-CcC"/>
                     </connections>
@@ -341,9 +341,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="card_icon" width="25" height="25"/>
         <image name="contactIcon" width="250" height="250"/>
         <image name="donate_icon" width="250" height="250"/>
         <image name="mission_icon" width="250" height="250"/>
         <image name="placeholder" width="250" height="250"/>
+        <image name="tab_icon-map" width="30" height="30"/>
     </resources>
 </document>
