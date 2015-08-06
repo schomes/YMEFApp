@@ -263,11 +263,39 @@
                     <connections>
                         <segue destination="gPp-n1-CWZ" kind="relationship" relationship="viewControllers" id="qSb-xK-naz"/>
                         <segue destination="qjL-8y-s0w" kind="relationship" relationship="viewControllers" id="3gK-hx-8rR"/>
+                        <segue destination="efw-S6-Jnj" kind="relationship" relationship="viewControllers" id="zOf-BJ-elv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahY-k7-zhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-460" y="414"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="vZ1-uq-dfS">
+            <objects>
+                <viewController id="efw-S6-Jnj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Os-WL-cDt"/>
+                        <viewControllerLayoutGuide type="bottom" id="jc1-eN-7xL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PUU-cF-QTU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blog" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLV-7c-6MO">
+                                <rect key="frame" x="16" y="28" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="7dO-GR-WaN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJG-pf-EQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="1434"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7g4-bQ-bi8">
@@ -301,18 +329,32 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrW-np-Qmn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjW-Bs-3bm">
-                                        <rect key="frame" x="521" y="31" width="71" height="25"/>
-                                        <state key="normal" image="card_icon">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2f-Ml-oWe">
+                                        <rect key="frame" x="562" y="26" width="30" height="30"/>
+                                        <state key="normal" image="options_icon">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="ymZ-NS-Kcy" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="v7H-vx-Dgw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ou-ml-k4j">
+                                        <rect key="frame" x="8" y="26" width="30" height="30"/>
+                                        <state key="normal" image="current_location_icon">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showCurrentLocation:" destination="qjL-8y-s0w" eventType="touchUpInside" id="6xD-UK-ICr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.37647058823529411" green="0.49019607843137253" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="ECo-b2-gzo"/>
-                                    <constraint firstAttribute="trailing" secondItem="yjW-Bs-3bm" secondAttribute="trailing" constant="8" id="RpF-ga-WkJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="yjW-Bs-3bm" secondAttribute="bottom" constant="8" id="lFJ-NW-ff8"/>
+                                    <constraint firstAttribute="bottom" secondItem="v2f-Ml-oWe" secondAttribute="bottom" constant="8" id="EJH-Iu-ilX"/>
+                                    <constraint firstAttribute="trailing" secondItem="v2f-Ml-oWe" secondAttribute="trailing" constant="8" id="FQj-09-9ad"/>
+                                    <constraint firstItem="5ou-ml-k4j" firstAttribute="leading" secondItem="FrW-np-Qmn" secondAttribute="leading" constant="8" id="J1S-rg-Wg3"/>
+                                    <constraint firstAttribute="bottom" secondItem="5ou-ml-k4j" secondAttribute="bottom" constant="8" id="XGa-wU-LOB"/>
                                 </constraints>
                             </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gPk-c2-qqF">
@@ -339,12 +381,41 @@
             </objects>
             <point key="canvasLocation" x="696" y="672"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="jzt-Cq-4q3">
+            <objects>
+                <viewController id="ymZ-NS-Kcy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GRy-UU-MdK"/>
+                        <viewControllerLayoutGuide type="bottom" id="yEk-Ef-VGf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aJy-pw-GBj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzP-sk-yAu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cr8-oV-MSX">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ca-Cf-S9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="672"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="card_icon" width="25" height="25"/>
         <image name="contactIcon" width="250" height="250"/>
+        <image name="current_location_icon" width="30" height="30"/>
         <image name="donate_icon" width="250" height="250"/>
         <image name="mission_icon" width="250" height="250"/>
+        <image name="options_icon" width="30" height="30"/>
         <image name="placeholder" width="250" height="250"/>
         <image name="tab_icon-map" width="30" height="30"/>
     </resources>
