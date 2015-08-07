@@ -306,7 +306,9 @@
         <scene sceneID="7g4-bQ-bi8">
             <objects>
                 <navigationController id="gPp-n1-CWZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="q9U-iL-SUJ"/>
+                    <tabBarItem key="tabBarItem" image="tab_icon-info" id="q9U-iL-SUJ">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Se0-VY-kjG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -411,6 +413,7 @@
         <image name="donate_icon" width="250" height="250"/>
         <image name="mission_icon" width="250" height="250"/>
         <image name="placeholder" width="250" height="250"/>
+        <image name="tab_icon-info" width="30" height="30"/>
         <image name="tab_icon-map" width="30" height="30"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
