@@ -278,7 +278,7 @@
         <!--Blog View Controller-->
         <scene sceneID="vZ1-uq-dfS">
             <objects>
-                <viewController id="efw-S6-Jnj" customClass="blogViewController" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="efw-S6-Jnj" customClass="BlogViewController" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Os-WL-cDt"/>
                         <viewControllerLayoutGuide type="bottom" id="jc1-eN-7xL"/>
