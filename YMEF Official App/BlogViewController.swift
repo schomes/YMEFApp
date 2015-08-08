@@ -20,7 +20,7 @@ class BlogViewController: UIViewController {
         
         HTTPFetcher(urlPath: blogURL)
         
-        // intead of calling HTTPFetcher, call JSONParser with blogURL instead
+        // intead of calling HTTPFetcher, call JSONParser with blogURL
         // JSONParser will use an instance of HTTPFetcher to get the data
         // These classes are found in jsonHandler.swift
         

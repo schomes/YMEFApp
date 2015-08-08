@@ -391,7 +391,9 @@
         <scene sceneID="DI5-6M-Y4n">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kbz-Fd-odz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="7dO-GR-WaN"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_icon-blog" id="7dO-GR-WaN">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E5c-8r-Qfs" propertyAccessControl="all">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -413,6 +415,7 @@
         <image name="donate_icon" width="250" height="250"/>
         <image name="mission_icon" width="250" height="250"/>
         <image name="placeholder" width="250" height="250"/>
+        <image name="tab_icon-blog" width="30" height="30"/>
         <image name="tab_icon-info" width="30" height="30"/>
         <image name="tab_icon-map" width="30" height="30"/>
     </resources>

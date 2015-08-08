@@ -67,7 +67,7 @@ class HTTPFetcher {
             // test JSON
             if let item: AnyObject = jsonResult["website"] {
                 if let jsonID: AnyObject = item["id"] {
-                    print(jsonID)
+                    print("Test: id is " + (jsonID as! String))
                 }
             }
         })
