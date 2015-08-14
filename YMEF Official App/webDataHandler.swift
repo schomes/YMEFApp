@@ -6,20 +6,23 @@
 //  Copyright (c) 2015 YMEF. All rights reserved.
 //
 
-// fetch and parse JSON files
-// Data source: https://samantha-marlow.squarespace.com/config#/|/blog?format=json-pretty
+// fetch and parse JSON/RSS files
+// Data source: https://samantha-marlow.squarespace.com/config#/|/blog?format=rss
 
 import Foundation
+import UIKit
 
 // 1. get json from server
 class HTTPFetcher {
     /* Fetches data using a HTTP GET request for a specified URL
      *
      * Properties:
-     * url NSURL: URL of JSON data
+     * url NSURL: URL of data
      *
      * Methods:
      * getJSON(url:): get JSON formatted data from a specified URL
+     *
+     * getRSS(url:): get RSS formatted data from a specified URL
      *
      *
      * Created with help from Calling APIs & Parsing JSON with Swift by Jeff Douglas
@@ -33,7 +36,11 @@ class HTTPFetcher {
         /* Class initializer
          * :param urlPath String: URL of JSON data
          */
+        
+        // is this necessary? perhaps create this class so it allows you to call its methods with URL passed in
         self.url = NSURL(string: urlPath)!
+        
+        // can take this call out later; used as a test right now
         getJSON(self.url)
     }
     
@@ -79,10 +86,14 @@ class HTTPFetcher {
         // perhaps with protocols or delegates?
         // http://stackoverflow.com/questions/24792872/getting-data-out-of-completionhandler-in-swift-in-nsurlconnection
     }
+    
+    func getRSS(url: NSURL) {
+        
+    }
 }
 
 // 2. format saved json into usable data structure (BlogPost struct below)
-class JSONParser {
+class RSSParser {
     // Formats JSON into a usable data structure
     
     // parse JSON
@@ -100,8 +111,9 @@ class JSONParser {
 struct BlogPost {
     // manages the information of a blog post
     
-    let title : String
-    let content : String
-    // image property
+    let title : String?
+    let pubDate : String?
+    let content : String?
+    let image : UIImage?
     
 }
