@@ -7,6 +7,7 @@
 //
 
 // fetch and parse JSON files
+// Data source: https://samantha-marlow.squarespace.com/config#/|/blog?format=json-pretty
 
 import Foundation
 
