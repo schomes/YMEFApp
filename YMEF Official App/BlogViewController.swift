@@ -16,6 +16,9 @@ class BlogViewController: UIViewController {
         var image = UIImage(named: "logo_YMEF.png")
         self.navigationItem.titleView = UIImageView(image: image)
         
+        let pattern_bg = UIImage(named: "light_bg.png")
+        view.backgroundColor = UIColor(patternImage: pattern_bg!)
+        
         let blogURL = "http://blog.squarespace.com/?format=json-pretty"
         
         HTTPFetcher(urlPath: blogURL)
