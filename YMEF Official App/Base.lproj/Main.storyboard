@@ -348,7 +348,7 @@
                     <navigationItem key="navigationItem" id="skC-6X-vol">
                         <barButtonItem key="leftBarButtonItem" style="done" id="hKd-fr-Ygo">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TBj-TI-3Hb">
-                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <rect key="frame" x="16" y="12" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="1"/>
                                 <state key="normal" image="current_location_icon"/>
@@ -357,6 +357,7 @@
                                 </connections>
                             </button>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="settings_wheel" id="CwK-Kn-ogN"/>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="gPk-c2-qqF" id="7tL-US-CcC"/>
@@ -411,10 +412,11 @@
     </scenes>
     <resources>
         <image name="contactIcon" width="250" height="250"/>
-        <image name="current_location_icon" width="22" height="22"/>
+        <image name="current_location_icon" width="18" height="18"/>
         <image name="donate_icon" width="250" height="250"/>
         <image name="mission_icon" width="250" height="250"/>
         <image name="placeholder" width="250" height="250"/>
+        <image name="settings_wheel" width="21" height="21"/>
         <image name="tab_icon-blog" width="30" height="30"/>
         <image name="tab_icon-info" width="30" height="30"/>
         <image name="tab_icon-map" width="30" height="30"/>
