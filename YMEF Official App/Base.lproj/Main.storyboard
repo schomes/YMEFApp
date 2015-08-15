@@ -416,7 +416,7 @@
         <image name="donate_icon" width="250" height="250"/>
         <image name="mission_icon" width="250" height="250"/>
         <image name="placeholder" width="250" height="250"/>
-        <image name="settings_wheel" width="21" height="21"/>
+        <image name="settings_wheel" width="26" height="26"/>
         <image name="tab_icon-blog" width="30" height="30"/>
         <image name="tab_icon-info" width="30" height="30"/>
         <image name="tab_icon-map" width="30" height="30"/>
