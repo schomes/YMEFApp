@@ -44,6 +44,13 @@ class HTTPFetcher {
         getJSON(self.url)
     }
     
+    /**
+    
+        Get JSON from URL
+        
+        :param: url URL of JSON data
+
+    */
     func getJSON(url: NSURL) {
         /* Get JSON from url
          *

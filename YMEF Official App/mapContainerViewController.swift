@@ -28,6 +28,15 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
         
     }
     
+    @IBAction func showMapOptions(sender: AnyObject) {
+        
+        let optionsView = self.storyboard!.instantiateViewControllerWithIdentifier("MapOptionsView") as! UIViewController
+//        self.view.addSubview(optionsView.view)
+        optionsView.view.backgroundColor = UIColor.clearColor()
+        optionsView.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
+        self.presentViewController(optionsView, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

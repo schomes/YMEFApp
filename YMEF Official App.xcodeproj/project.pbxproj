@@ -10,6 +10,7 @@
 		5318E0A91B72EFEE00967FD9 /* mapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */; };
 		5318E0AB1B754EF300967FD9 /* webDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0AA1B754EF300967FD9 /* webDataHandler.swift */; };
 		5318E0AD1B80134500967FD9 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0AC1B80134500967FD9 /* BlogTableViewController.swift */; };
+		5318E0AF1B8176AF00967FD9 /* MapOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0AE1B8176AF00967FD9 /* MapOptionsView.swift */; };
 		53912E631B17E63900100F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53912E621B17E63900100F5A /* AppDelegate.swift */; };
 		53912E6A1B17E63900100F5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53912E681B17E63900100F5A /* Main.storyboard */; };
 		53912E6F1B17E63900100F5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53912E6D1B17E63900100F5A /* LaunchScreen.xib */; };
@@ -33,6 +34,7 @@
 		5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapContainerViewController.swift; sourceTree = "<group>"; };
 		5318E0AA1B754EF300967FD9 /* webDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webDataHandler.swift; sourceTree = "<group>"; };
 		5318E0AC1B80134500967FD9 /* BlogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
+		5318E0AE1B8176AF00967FD9 /* MapOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOptionsView.swift; sourceTree = "<group>"; };
 		53912E5D1B17E63900100F5A /* YMEF Official App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YMEF Official App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53912E611B17E63900100F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53912E621B17E63900100F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				53912E621B17E63900100F5A /* AppDelegate.swift */,
 				53912E681B17E63900100F5A /* Main.storyboard */,
+				5318E0AE1B8176AF00967FD9 /* MapOptionsView.swift */,
 				CCF4E4451B740D140008D9C5 /* BlogViewController.swift */,
 				5318E0AC1B80134500967FD9 /* BlogTableViewController.swift */,
 				5318E0AA1B754EF300967FD9 /* webDataHandler.swift */,
@@ -230,6 +233,7 @@
 				5318E0A91B72EFEE00967FD9 /* mapContainerViewController.swift in Sources */,
 				CCF4E4461B740D140008D9C5 /* BlogViewController.swift in Sources */,
 				5318E0AD1B80134500967FD9 /* BlogTableViewController.swift in Sources */,
+				5318E0AF1B8176AF00967FD9 /* MapOptionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

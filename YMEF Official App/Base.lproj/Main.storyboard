@@ -147,7 +147,11 @@
                                 </connections>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="settings_wheel" id="CwK-Kn-ogN"/>
+                        <barButtonItem key="rightBarButtonItem" image="settings_wheel" id="CwK-Kn-ogN">
+                            <connections>
+                                <action selector="showMapOptions:" destination="qjL-8y-s0w" id="uOA-Yy-TX6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="gPk-c2-qqF" id="7tL-US-CcC"/>
@@ -156,6 +160,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOO-Oc-rzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1508" y="672"/>
+        </scene>
+        <!--Map Options View-->
+        <scene sceneID="H0v-7V-BE4">
+            <objects>
+                <viewController storyboardIdentifier="MapOptionsView" id="tuK-UF-UMP" customClass="MapOptionsView" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BC3-sj-vSu"/>
+                        <viewControllerLayoutGuide type="bottom" id="tXC-8a-oo0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MiL-jY-qq8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUN-Fy-sZ5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ySW-eS-Zv3">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oG4-fx-IIa">
+                                            <rect key="frame" x="24" y="8" width="195" height="133"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WUN-Fy-sZ5" firstAttribute="top" secondItem="MiL-jY-qq8" secondAttribute="top" id="2uZ-xa-0k2"/>
+                            <constraint firstAttribute="bottom" secondItem="WUN-Fy-sZ5" secondAttribute="bottom" id="DVA-S8-R8E"/>
+                            <constraint firstAttribute="trailing" secondItem="WUN-Fy-sZ5" secondAttribute="trailing" id="YcU-YX-kSe"/>
+                            <constraint firstItem="WUN-Fy-sZ5" firstAttribute="leading" secondItem="MiL-jY-qq8" secondAttribute="leading" id="ZKZ-sC-Vw5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6Z-OE-dWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2155" y="672"/>
         </scene>
         <!--Blog Table View Controller-->
         <scene sceneID="epP-O9-YVz">
