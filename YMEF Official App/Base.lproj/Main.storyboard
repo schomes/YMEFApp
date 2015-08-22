@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F40-rn-ULf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -60,35 +61,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="violins_01" translatesAutoresizingMaskIntoConstraints="NO" id="twx-a0-m7n">
                                 <rect key="frame" x="0.0" y="64" width="500" height="487"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" tag="-1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="violins_01" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-GR-N6C">
+                                <rect key="frame" x="0.0" y="94" width="500" height="160"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqG-4j-WPU">
-                                <rect key="frame" x="16" y="72" width="227" height="25"/>
-                                <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
-                                <state key="normal" title="ABOUT">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-nw-d8j">
-                                <rect key="frame" x="257" y="72" width="227" height="25"/>
-                                <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
-                                <state key="normal" title="DONATE">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LME-HJ-ZIt">
-                                <rect key="frame" x="16" y="514" width="468" height="25"/>
-                                <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="17" y="72" width="148" height="14"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="9vB-A1-ytU"/>
+                                    <constraint firstAttribute="height" constant="14" id="ohG-wO-sDE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
-                                <state key="normal" title="GET INVOLVED WITH YMEF">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="ABOUT">
+                                    <color key="titleColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.5884645220670397" green="0.78287413369401526" blue="0.92832623106060608" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.79999999999999982" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Mi-sge">
-                                <rect key="frame" x="16" y="105" width="468" height="402"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.85000000000000009" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Mi-sge">
+                                <rect key="frame" x="16" y="261" width="468" height="282"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">In 2010, YMEF was created by five University of Minnesota students. Their purpose was simple: Give youth the opportunity to benefit from music education, regardless of their financial situation.
 
@@ -99,27 +96,51 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-nw-d8j">
+                                <rect key="frame" x="337" y="72" width="148" height="14"/>
+                                <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="I0K-H4-yla"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                                <state key="normal" title="DONATE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LME-HJ-ZIt">
+                                <rect key="frame" x="177" y="72" width="148" height="14"/>
+                                <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="8xy-Fo-lK3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                                <state key="normal" title="CONTACT">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="twx-a0-m7n" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" id="89p-uu-gJq"/>
-                            <constraint firstItem="LME-HJ-ZIt" firstAttribute="top" secondItem="dl7-Mi-sge" secondAttribute="bottom" constant="8" id="AjM-dg-LdJ"/>
-                            <constraint firstAttribute="trailing" secondItem="7Py-nw-d8j" secondAttribute="trailing" constant="16" id="FHn-7k-DiW"/>
-                            <constraint firstItem="cqG-4j-WPU" firstAttribute="width" secondItem="7Py-nw-d8j" secondAttribute="width" id="OQR-gM-mMx"/>
-                            <constraint firstAttribute="trailing" secondItem="twx-a0-m7n" secondAttribute="trailing" id="PZv-aj-J1i"/>
-                            <constraint firstItem="cqG-4j-WPU" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="RnT-DL-CPe"/>
-                            <constraint firstAttribute="trailing" secondItem="dl7-Mi-sge" secondAttribute="trailing" constant="16" id="TJS-eD-rq2"/>
-                            <constraint firstAttribute="bottom" secondItem="twx-a0-m7n" secondAttribute="bottom" constant="49" id="Xsg-0c-SYM"/>
-                            <constraint firstItem="twx-a0-m7n" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="64" id="co5-nA-1Q6"/>
-                            <constraint firstItem="bzz-5c-Rp2" firstAttribute="top" secondItem="LME-HJ-ZIt" secondAttribute="bottom" constant="12" id="dHN-nv-7MG"/>
-                            <constraint firstItem="cqG-4j-WPU" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" constant="16" id="gSq-wh-PB3"/>
-                            <constraint firstItem="LME-HJ-ZIt" firstAttribute="leading" secondItem="cqG-4j-WPU" secondAttribute="leading" id="hew-1g-nEa"/>
-                            <constraint firstItem="dl7-Mi-sge" firstAttribute="top" secondItem="cqG-4j-WPU" secondAttribute="bottom" constant="8" id="huK-7y-AqK"/>
-                            <constraint firstItem="7Py-nw-d8j" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="l8Z-bp-Bo0"/>
-                            <constraint firstItem="LME-HJ-ZIt" firstAttribute="trailing" secondItem="7Py-nw-d8j" secondAttribute="trailing" id="mGy-Lh-zMF"/>
-                            <constraint firstItem="dl7-Mi-sge" firstAttribute="top" secondItem="7Py-nw-d8j" secondAttribute="bottom" constant="8" id="rbw-jS-tPw"/>
-                            <constraint firstItem="7Py-nw-d8j" firstAttribute="leading" secondItem="cqG-4j-WPU" secondAttribute="trailing" constant="14" id="srJ-q5-tSD"/>
-                            <constraint firstItem="dl7-Mi-sge" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" constant="16" id="wG2-ha-SJI"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="top" secondItem="J9v-GR-N6C" secondAttribute="bottom" constant="7" id="02B-d0-glZ"/>
+                            <constraint firstAttribute="bottom" secondItem="twx-a0-m7n" secondAttribute="bottom" constant="49" id="1jX-H8-otp"/>
+                            <constraint firstItem="7Py-nw-d8j" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="4EP-AQ-0ce"/>
+                            <constraint firstItem="LME-HJ-ZIt" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="6lD-wS-vx4"/>
+                            <constraint firstItem="twx-a0-m7n" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="64" id="6po-ca-DQv"/>
+                            <constraint firstItem="7Py-nw-d8j" firstAttribute="leading" secondItem="LME-HJ-ZIt" secondAttribute="trailing" constant="12" id="9xz-Su-wc2"/>
+                            <constraint firstAttribute="trailing" secondItem="7Py-nw-d8j" secondAttribute="trailing" constant="15" id="Bxw-yA-NfV"/>
+                            <constraint firstItem="LME-HJ-ZIt" firstAttribute="width" secondItem="7Py-nw-d8j" secondAttribute="width" id="INJ-mj-FvL"/>
+                            <constraint firstAttribute="trailing" secondItem="twx-a0-m7n" secondAttribute="trailing" id="Sht-xK-wGc"/>
+                            <constraint firstItem="J9v-GR-N6C" firstAttribute="top" secondItem="cqG-4j-WPU" secondAttribute="bottom" constant="8" id="TSM-xF-8mz"/>
+                            <constraint firstItem="J9v-GR-N6C" firstAttribute="leading" secondItem="twx-a0-m7n" secondAttribute="leading" id="Wc8-ob-0iY"/>
+                            <constraint firstItem="J9v-GR-N6C" firstAttribute="trailing" secondItem="twx-a0-m7n" secondAttribute="trailing" id="ao7-xI-pUO"/>
+                            <constraint firstItem="bzz-5c-Rp2" firstAttribute="top" secondItem="dl7-Mi-sge" secondAttribute="bottom" constant="8" symbolic="YES" id="gvd-dN-N44"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leadingMargin" id="iOQ-gM-V61"/>
+                            <constraint firstItem="cqG-4j-WPU" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" constant="17" id="keH-Ve-Kbc"/>
+                            <constraint firstItem="J9v-GR-N6C" firstAttribute="centerX" secondItem="dl7-Mi-sge" secondAttribute="centerX" id="pAX-tD-Zy5"/>
+                            <constraint firstItem="twx-a0-m7n" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" id="qWO-WL-ro4"/>
+                            <constraint firstItem="LME-HJ-ZIt" firstAttribute="leading" secondItem="cqG-4j-WPU" secondAttribute="trailing" constant="12" id="wzT-18-bTO"/>
+                            <constraint firstItem="LME-HJ-ZIt" firstAttribute="width" secondItem="cqG-4j-WPU" secondAttribute="width" id="x4R-2H-n6D"/>
+                            <constraint firstItem="cqG-4j-WPU" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="zOW-xx-qYd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cgs-so-Nas"/>
@@ -127,14 +148,6 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0R9-og-4x1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1570" y="-396"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="he2-4p-3FK">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="jFy-D8-qMK" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJT-wL-lvP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2218" y="-734"/>
         </scene>
         <!--mapContainerViewController-->
         <scene sceneID="Bst-OU-BDr">
