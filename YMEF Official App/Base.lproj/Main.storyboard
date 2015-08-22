@@ -61,8 +61,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="violins_01" translatesAutoresizingMaskIntoConstraints="NO" id="twx-a0-m7n">
                                 <rect key="frame" x="0.0" y="64" width="500" height="487"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="-1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="violins_01" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-GR-N6C">
-                                <rect key="frame" x="0.0" y="94" width="500" height="160"/>
+                            <imageView userInteractionEnabled="NO" tag="-1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="violins_01" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-GR-N6C">
+                                <rect key="frame" x="0.0" y="94" width="500" height="148"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqG-4j-WPU">
                                 <rect key="frame" x="17" y="72" width="148" height="14"/>
@@ -84,8 +84,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.85000000000000009" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Mi-sge">
-                                <rect key="frame" x="16" y="261" width="468" height="282"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.85000000000000009" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Mi-sge">
+                                <rect key="frame" x="16" y="249" width="468" height="294"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">In 2010, YMEF was created by five University of Minnesota students. Their purpose was simple: Give youth the opportunity to benefit from music education, regardless of their financial situation.
 
@@ -121,23 +121,23 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dl7-Mi-sge" firstAttribute="top" secondItem="J9v-GR-N6C" secondAttribute="bottom" constant="7" id="02B-d0-glZ"/>
                             <constraint firstAttribute="bottom" secondItem="twx-a0-m7n" secondAttribute="bottom" constant="49" id="1jX-H8-otp"/>
                             <constraint firstItem="7Py-nw-d8j" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="4EP-AQ-0ce"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="6lD-wS-vx4"/>
                             <constraint firstItem="twx-a0-m7n" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="64" id="6po-ca-DQv"/>
                             <constraint firstItem="7Py-nw-d8j" firstAttribute="leading" secondItem="LME-HJ-ZIt" secondAttribute="trailing" constant="12" id="9xz-Su-wc2"/>
                             <constraint firstAttribute="trailing" secondItem="7Py-nw-d8j" secondAttribute="trailing" constant="15" id="Bxw-yA-NfV"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="centerX" secondItem="J9v-GR-N6C" secondAttribute="centerX" id="DtN-M4-bTP"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="width" secondItem="7Py-nw-d8j" secondAttribute="width" id="INJ-mj-FvL"/>
+                            <constraint firstItem="bzz-5c-Rp2" firstAttribute="top" secondItem="dl7-Mi-sge" secondAttribute="bottom" constant="8" symbolic="YES" id="PqX-cQ-Tnc"/>
                             <constraint firstAttribute="trailing" secondItem="twx-a0-m7n" secondAttribute="trailing" id="Sht-xK-wGc"/>
-                            <constraint firstItem="J9v-GR-N6C" firstAttribute="top" secondItem="cqG-4j-WPU" secondAttribute="bottom" constant="8" id="TSM-xF-8mz"/>
-                            <constraint firstItem="J9v-GR-N6C" firstAttribute="leading" secondItem="twx-a0-m7n" secondAttribute="leading" id="Wc8-ob-0iY"/>
-                            <constraint firstItem="J9v-GR-N6C" firstAttribute="trailing" secondItem="twx-a0-m7n" secondAttribute="trailing" id="ao7-xI-pUO"/>
-                            <constraint firstItem="bzz-5c-Rp2" firstAttribute="top" secondItem="dl7-Mi-sge" secondAttribute="bottom" constant="8" symbolic="YES" id="gvd-dN-N44"/>
-                            <constraint firstItem="dl7-Mi-sge" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leadingMargin" id="iOQ-gM-V61"/>
+                            <constraint firstItem="J9v-GR-N6C" firstAttribute="trailing" secondItem="twx-a0-m7n" secondAttribute="trailing" id="gmI-JD-pZZ"/>
+                            <constraint firstItem="J9v-GR-N6C" firstAttribute="top" secondItem="cqG-4j-WPU" secondAttribute="bottom" constant="8" symbolic="YES" id="hiz-XG-AvJ"/>
                             <constraint firstItem="cqG-4j-WPU" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" constant="17" id="keH-Ve-Kbc"/>
-                            <constraint firstItem="J9v-GR-N6C" firstAttribute="centerX" secondItem="dl7-Mi-sge" secondAttribute="centerX" id="pAX-tD-Zy5"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leadingMargin" id="lCY-18-GwM"/>
                             <constraint firstItem="twx-a0-m7n" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" id="qWO-WL-ro4"/>
+                            <constraint firstItem="J9v-GR-N6C" firstAttribute="leading" secondItem="twx-a0-m7n" secondAttribute="leading" id="uHa-sr-IgJ"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="top" secondItem="J9v-GR-N6C" secondAttribute="bottom" constant="7" id="wrg-us-g1O"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="leading" secondItem="cqG-4j-WPU" secondAttribute="trailing" constant="12" id="wzT-18-bTO"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="width" secondItem="cqG-4j-WPU" secondAttribute="width" id="x4R-2H-n6D"/>
                             <constraint firstItem="cqG-4j-WPU" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="zOW-xx-qYd"/>
