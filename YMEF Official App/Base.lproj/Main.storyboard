@@ -64,7 +64,7 @@
                                 <rect key="frame" x="16" y="72" width="227" height="25"/>
                                 <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
-                                <state key="normal" title="DONATE">
+                                <state key="normal" title="ABOUT">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -72,37 +72,54 @@
                                 <rect key="frame" x="257" y="72" width="227" height="25"/>
                                 <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
-                                <state key="normal" title="VOLUNTEER">
+                                <state key="normal" title="DONATE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LME-HJ-ZIt">
-                                <rect key="frame" x="16" y="515" width="468" height="24"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LME-HJ-ZIt">
+                                <rect key="frame" x="16" y="514" width="468" height="25"/>
                                 <color key="backgroundColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="9vB-A1-ytU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
-                                <state key="normal" title="GET IN TOUCH WITH YMEF">
+                                <state key="normal" title="GET INVOLVED WITH YMEF">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.79999999999999982" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Mi-sge">
+                                <rect key="frame" x="16" y="105" width="468" height="402"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">In 2010, YMEF was created by five University of Minnesota students. Their purpose was simple: Give youth the opportunity to benefit from music education, regardless of their financial situation.
+
+The response has been greater than we ever imagined. An outpouring of support from schools, teachers, the local music community, music lovers and the kids themselves told us we were onto something big. Our mission: to build what we’ve started into something that touches the lives of more and more children every year.
+
+YMEF is a student-led foundation dedicated to supporting musical education and training for youth in need. As ever-diminishing funds for music and the arts limit the educational experience of kids, we are actively pursuing partners to help us provide the financial means and generate community support to give more kids more access to musical education.</mutableString>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="twx-a0-m7n" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" id="89p-uu-gJq"/>
+                            <constraint firstItem="LME-HJ-ZIt" firstAttribute="top" secondItem="dl7-Mi-sge" secondAttribute="bottom" constant="8" id="AjM-dg-LdJ"/>
                             <constraint firstAttribute="trailing" secondItem="7Py-nw-d8j" secondAttribute="trailing" constant="16" id="FHn-7k-DiW"/>
                             <constraint firstItem="cqG-4j-WPU" firstAttribute="width" secondItem="7Py-nw-d8j" secondAttribute="width" id="OQR-gM-mMx"/>
                             <constraint firstAttribute="trailing" secondItem="twx-a0-m7n" secondAttribute="trailing" id="PZv-aj-J1i"/>
                             <constraint firstItem="cqG-4j-WPU" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="RnT-DL-CPe"/>
+                            <constraint firstAttribute="trailing" secondItem="dl7-Mi-sge" secondAttribute="trailing" constant="16" id="TJS-eD-rq2"/>
                             <constraint firstAttribute="bottom" secondItem="twx-a0-m7n" secondAttribute="bottom" constant="49" id="Xsg-0c-SYM"/>
                             <constraint firstItem="twx-a0-m7n" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="64" id="co5-nA-1Q6"/>
                             <constraint firstItem="bzz-5c-Rp2" firstAttribute="top" secondItem="LME-HJ-ZIt" secondAttribute="bottom" constant="12" id="dHN-nv-7MG"/>
                             <constraint firstItem="cqG-4j-WPU" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" constant="16" id="gSq-wh-PB3"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="leading" secondItem="cqG-4j-WPU" secondAttribute="leading" id="hew-1g-nEa"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="top" secondItem="cqG-4j-WPU" secondAttribute="bottom" constant="8" id="huK-7y-AqK"/>
                             <constraint firstItem="7Py-nw-d8j" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="l8Z-bp-Bo0"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="trailing" secondItem="7Py-nw-d8j" secondAttribute="trailing" id="mGy-Lh-zMF"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="top" secondItem="7Py-nw-d8j" secondAttribute="bottom" constant="8" id="rbw-jS-tPw"/>
                             <constraint firstItem="7Py-nw-d8j" firstAttribute="leading" secondItem="cqG-4j-WPU" secondAttribute="trailing" constant="14" id="srJ-q5-tSD"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" constant="16" id="wG2-ha-SJI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cgs-so-Nas"/>
@@ -110,6 +127,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0R9-og-4x1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1570" y="-396"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="he2-4p-3FK">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="jFy-D8-qMK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJT-wL-lvP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2218" y="-734"/>
         </scene>
         <!--mapContainerViewController-->
         <scene sceneID="Bst-OU-BDr">
@@ -198,10 +223,11 @@
                             <constraint firstItem="WUN-Fy-sZ5" firstAttribute="leading" secondItem="MiL-jY-qq8" secondAttribute="leading" id="ZKZ-sC-Vw5"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="oQD-Kd-5HH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6Z-OE-dWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2155" y="672"/>
+            <point key="canvasLocation" x="2165" y="672"/>
         </scene>
         <!--Blog Table View Controller-->
         <scene sceneID="epP-O9-YVz">
