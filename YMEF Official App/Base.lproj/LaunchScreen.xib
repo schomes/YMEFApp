@@ -11,17 +11,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="p2t-HB-y8S">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="21" width="600" height="579"/>
                     <color key="backgroundColor" red="0.25866158789999999" green="0.3373249062" blue="0.39982522840000001" alpha="1" colorSpace="calibratedRGB"/>
                     <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="p2t-HB-y8S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Lb-1z-VqR"/>
-                <constraint firstAttribute="trailing" secondItem="p2t-HB-y8S" secondAttribute="trailing" id="5sJ-bW-g0n"/>
-                <constraint firstAttribute="bottom" secondItem="p2t-HB-y8S" secondAttribute="bottom" id="Uh9-Kb-ILA"/>
-                <constraint firstItem="p2t-HB-y8S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gIV-8b-5ts"/>
+                <constraint firstAttribute="bottom" secondItem="p2t-HB-y8S" secondAttribute="bottom" id="Ixt-uD-rwl"/>
+                <constraint firstAttribute="trailing" secondItem="p2t-HB-y8S" secondAttribute="trailing" id="JHs-cQ-J1l"/>
+                <constraint firstItem="p2t-HB-y8S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NoY-JS-SB0"/>
+                <constraint firstItem="p2t-HB-y8S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="21" id="ntS-zd-VXV"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>

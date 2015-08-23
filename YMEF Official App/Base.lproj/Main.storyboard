@@ -85,7 +85,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.85000000000000009" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Mi-sge">
-                                <rect key="frame" x="16" y="249" width="468" height="294"/>
+                                <rect key="frame" x="16" y="249" width="468" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">In 2010, YMEF was created by five University of Minnesota students. Their purpose was simple: Give youth the opportunity to benefit from music education, regardless of their financial situation.
 
@@ -118,26 +118,36 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-Ex-43b">
+                                <rect key="frame" x="230" y="522" width="41" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="Dmu-ER-aAf"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.65731536629999998" green="0.8696174861" blue="0.9275765467" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="twx-a0-m7n" secondAttribute="bottom" constant="49" id="1jX-H8-otp"/>
                             <constraint firstItem="7Py-nw-d8j" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="4EP-AQ-0ce"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="centerX" secondItem="J9v-GR-N6C" secondAttribute="centerX" id="4b9-OT-OLy"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="6lD-wS-vx4"/>
                             <constraint firstItem="twx-a0-m7n" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="64" id="6po-ca-DQv"/>
                             <constraint firstItem="7Py-nw-d8j" firstAttribute="leading" secondItem="LME-HJ-ZIt" secondAttribute="trailing" constant="12" id="9xz-Su-wc2"/>
                             <constraint firstAttribute="trailing" secondItem="7Py-nw-d8j" secondAttribute="trailing" constant="15" id="Bxw-yA-NfV"/>
-                            <constraint firstItem="dl7-Mi-sge" firstAttribute="centerX" secondItem="J9v-GR-N6C" secondAttribute="centerX" id="DtN-M4-bTP"/>
+                            <constraint firstItem="gEY-Ex-43b" firstAttribute="centerX" secondItem="dl7-Mi-sge" secondAttribute="centerX" id="Eeb-jC-Kwp"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="gEY-Ex-43b" secondAttribute="bottom" constant="41" id="GEC-Pg-pDK"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="width" secondItem="7Py-nw-d8j" secondAttribute="width" id="INJ-mj-FvL"/>
-                            <constraint firstItem="bzz-5c-Rp2" firstAttribute="top" secondItem="dl7-Mi-sge" secondAttribute="bottom" constant="8" symbolic="YES" id="PqX-cQ-Tnc"/>
                             <constraint firstAttribute="trailing" secondItem="twx-a0-m7n" secondAttribute="trailing" id="Sht-xK-wGc"/>
+                            <constraint firstItem="bzz-5c-Rp2" firstAttribute="top" secondItem="dl7-Mi-sge" secondAttribute="bottom" constant="22" id="WKZ-zJ-5WD"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leadingMargin" id="d2r-nm-hYE"/>
                             <constraint firstItem="J9v-GR-N6C" firstAttribute="trailing" secondItem="twx-a0-m7n" secondAttribute="trailing" id="gmI-JD-pZZ"/>
+                            <constraint firstItem="dl7-Mi-sge" firstAttribute="top" secondItem="J9v-GR-N6C" secondAttribute="bottom" constant="7" id="h5Q-1g-Hxo"/>
                             <constraint firstItem="J9v-GR-N6C" firstAttribute="top" secondItem="cqG-4j-WPU" secondAttribute="bottom" constant="8" symbolic="YES" id="hiz-XG-AvJ"/>
                             <constraint firstItem="cqG-4j-WPU" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" constant="17" id="keH-Ve-Kbc"/>
-                            <constraint firstItem="dl7-Mi-sge" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leadingMargin" id="lCY-18-GwM"/>
                             <constraint firstItem="twx-a0-m7n" firstAttribute="leading" secondItem="iYC-ma-ood" secondAttribute="leading" id="qWO-WL-ro4"/>
                             <constraint firstItem="J9v-GR-N6C" firstAttribute="leading" secondItem="twx-a0-m7n" secondAttribute="leading" id="uHa-sr-IgJ"/>
-                            <constraint firstItem="dl7-Mi-sge" firstAttribute="top" secondItem="J9v-GR-N6C" secondAttribute="bottom" constant="7" id="wrg-us-g1O"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="leading" secondItem="cqG-4j-WPU" secondAttribute="trailing" constant="12" id="wzT-18-bTO"/>
                             <constraint firstItem="LME-HJ-ZIt" firstAttribute="width" secondItem="cqG-4j-WPU" secondAttribute="width" id="x4R-2H-n6D"/>
                             <constraint firstItem="cqG-4j-WPU" firstAttribute="top" secondItem="iYC-ma-ood" secondAttribute="top" constant="72" id="zOW-xx-qYd"/>
