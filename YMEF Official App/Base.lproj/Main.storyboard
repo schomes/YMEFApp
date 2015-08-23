@@ -84,7 +84,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.85000000000000009" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Mi-sge">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.94999999999999996" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dl7-Mi-sge">
                                 <rect key="frame" x="16" y="249" width="468" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -97,7 +97,7 @@
                                     </fragment>
                                     <fragment content="Give youth the opportunity to benefit from music education, regardless of their financial situation.">
                                         <attributes>
-                                            <color key="NSColor" red="0.45882352941176469" green="0.63529411764705879" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.60392156862745094" green="0.83921568627450982" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="10" name="Futura-MediumItalic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -132,7 +132,7 @@ Cg
                                     </fragment>
                                     <fragment content="to build what we’ve started into something that touches the lives of more and more children every year.">
                                         <attributes>
-                                            <color key="NSColor" red="0.45882352941176469" green="0.63529411764705879" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.60392156862745094" green="0.83921568627450982" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="10" name="Futura-MediumItalic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -152,13 +152,27 @@ Cg
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="10" name="Futura-Medium"/>
+                                            <color key="NSColor" red="0.60392156862745094" green="0.83921568627450982" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="10" name="Futura-MediumItalic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
+                                    <fragment content="YMEF is a student-led foundation dedicated to supporting musical education and training for youth in need.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.60392156862745094" green="0.83921568627450982" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="10" name="Futura-MediumItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.45098039215686275" green="0.56470588235294117" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="10" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
                                     <fragment>
-                                        <string key="content">YMEF is a student-led foundation dedicated to supporting musical education and training for youth in need. As ever-diminishing funds for music and the arts limit the educational experience of kids, we are actively pursuing partners to help us provide the financial means and generate community support to give more kids more access to musical education.</string>
+                                        <string key="content">As ever-diminishing funds for music and the arts limit the educational experience of kids, we are actively pursuing partners to help us provide the financial means and generate community support to give more kids more access to musical education.</string>
                                         <attributes>
                                             <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="10" name="Futura-Medium"/>
