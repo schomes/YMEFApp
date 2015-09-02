@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D1CA7D10-FCBE-412D-AD59-385507069B5E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>YMEF Official App</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5541ACFDAE27EB659F558ABB9BA0092746988042</key>
 		<string>https://github.com/schomes/YMEFApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>YMEF Official App.xcodeproj</string>
+	<string>YMEF Official App.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5541ACFDAE27EB659F558ABB9BA0092746988042</key>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F40-rn-ULf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F40-rn-ULf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -212,6 +212,7 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
         <!--Map Options View-->
         <scene sceneID="H0v-7V-BE4">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6Z-OE-dWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MapOptionsView" id="tuK-UF-UMP" customClass="MapOptionsView" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BC3-sj-vSu"/>
@@ -236,10 +237,31 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
                                                 <action selector="dismissView:" destination="tuK-UF-UMP" eventType="touchUpInside" id="8sh-76-hwV"/>
                                             </connections>
                                         </button>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6ak-9X-ipb">
+                                            <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <prototypes>
+                                                <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="optionsCell" id="NyX-rF-8hb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NyX-rF-8hb" id="fx6-0L-wEr">
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </tableViewCellContentView>
+                                                </tableViewCell>
+                                            </prototypes>
+                                            <connections>
+                                                <outlet property="dataSource" destination="tuK-UF-UMP" id="icQ-9w-7FS"/>
+                                                <outlet property="delegate" destination="tuK-UF-UMP" id="C0q-pb-4fn"/>
+                                            </connections>
+                                        </tableView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="6ak-9X-ipb" firstAttribute="leading" secondItem="ySW-eS-Zv3" secondAttribute="leading" id="24Y-5g-dUQ"/>
+                                        <constraint firstItem="6ak-9X-ipb" firstAttribute="top" secondItem="wL5-mA-eeK" secondAttribute="bottom" constant="8" id="6Q9-lQ-g8c"/>
                                         <constraint firstItem="wL5-mA-eeK" firstAttribute="top" secondItem="ySW-eS-Zv3" secondAttribute="top" constant="22" id="9Op-6g-YMS"/>
                                         <constraint firstAttribute="trailing" secondItem="wL5-mA-eeK" secondAttribute="trailing" constant="17" id="GkS-Hg-XCw"/>
+                                        <constraint firstAttribute="bottom" secondItem="6ak-9X-ipb" secondAttribute="bottom" id="Ltb-al-VPW"/>
+                                        <constraint firstAttribute="trailing" secondItem="6ak-9X-ipb" secondAttribute="trailing" id="ykz-dQ-sfQ"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="light"/>
@@ -255,9 +277,8 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
                     </view>
                     <navigationItem key="navigationItem" id="oQD-Kd-5HH"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s6Z-OE-dWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2165" y="672"/>
+            <point key="canvasLocation" x="2157" y="684"/>
         </scene>
         <!--Blog Table View Controller-->
         <scene sceneID="epP-O9-YVz">
