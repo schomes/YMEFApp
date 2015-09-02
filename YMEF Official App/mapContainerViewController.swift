@@ -83,6 +83,8 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
     */
     func loadAndPresentAnnotations(){
         
+        // check options and determine which annotations to load
+        
         //TODO: this is a messy test; make sure to organize data clearly
         let ccStop = CampusConnectorStop(title: "A campus connector stop", locationName: "Near here", coordinate: CLLocationCoordinate2D(latitude: 44.9647, longitude: -93.2354))
         let ccStop2 = CampusConnectorStop(title: "A campus connector stop2", locationName: "A stop", coordinate: CLLocationCoordinate2D(latitude: 44.9747, longitude: -93.2454))
