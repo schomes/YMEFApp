@@ -241,12 +241,24 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
                                             <rect key="frame" x="0.0" y="60" width="600" height="540"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <prototypes>
-                                                <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="optionsCell" id="NyX-rF-8hb">
+                                                <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="optionsCell" id="NyX-rF-8hb">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NyX-rF-8hb" id="fx6-0L-wEr">
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Qj-er-Nbd">
+                                                                <rect key="frame" x="8" y="6" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="6Qj-er-Nbd" firstAttribute="leading" secondItem="fx6-0L-wEr" secondAttribute="leadingMargin" id="A04-s6-VzL"/>
+                                                            <constraint firstItem="6Qj-er-Nbd" firstAttribute="top" secondItem="fx6-0L-wEr" secondAttribute="topMargin" constant="-2" id="BJn-6F-BsR"/>
+                                                            <constraint firstAttribute="bottomMargin" secondItem="6Qj-er-Nbd" secondAttribute="bottom" constant="-1.5" id="r0E-wL-YEV"/>
+                                                        </constraints>
                                                     </tableViewCellContentView>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </tableViewCell>
                                             </prototypes>
                                             <connections>
