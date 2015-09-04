@@ -165,16 +165,17 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
 extension mapContainerViewController {
     
     /**
-
+        Sets default values for map preferences if preferences are empty. Default values will only 
+        need to be set when the app is first used.
     */
     func checkMapSettingsAndSetIfEmpty() {
-        if defaults.objectForKey("showCampusConnectorStops") == nil {
-            println("is nil")
-            // set default value (showCampusConnectorStops == True)
+        for preference in MapOptionsView.preferenceKeys {
+            if defaults.objectForKey(preference) == nil {
+                println("set default value \(preference)")
+                defaults.setBool(true, forKey: preference)
+                // set default value (showCampusConnectorStops == True)
+            }
         }
+        
     }
-    
-//    if objectForKey == nil {
-//    
-//    }
 }

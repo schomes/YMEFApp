@@ -11,7 +11,7 @@ import UIKit
 class MapOptionsView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBAction func dismissView(sender: AnyObject) {
-        updateMapPreferences()
+//        updateMapPreferences()
         dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -46,6 +46,9 @@ class MapOptionsView: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     var options = ["one", "two", "three"]
+    
+    // list of keys to access preferences in the defaults system (with NSUserDefaults)
+    static let preferenceKeys = ["showCampusConnectorStops", "showDeals", "showConcerts"]
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
@@ -112,8 +115,10 @@ extension MapOptionsView {
     
     // manage map preferences/settings
     
-    func updateMapPreferences() {
+    // update preference everytime a switch is toggled; use the string (title) to determine which one and switch value to determine preference value
+    func updateMapPreferenceForKey(key: String, preferenceIsEnabled: Boolean) {
         println("did save preferences")
+        
         // iterate through each preference and determine/save its value (switch is on or off) (don't iterate through the table, this is only a visual representation) 
     }
 
