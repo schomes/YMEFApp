@@ -212,7 +212,6 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
         <!--Map Options View-->
         <scene sceneID="H0v-7V-BE4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s6Z-OE-dWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MapOptionsView" id="tuK-UF-UMP" customClass="MapOptionsView" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BC3-sj-vSu"/>
@@ -289,6 +288,7 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
                     </view>
                     <navigationItem key="navigationItem" id="oQD-Kd-5HH"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6Z-OE-dWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2157" y="684"/>
         </scene>

@@ -11,6 +11,7 @@ import UIKit
 class MapOptionsView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBAction func dismissView(sender: AnyObject) {
+        updateMapPreferences()
         dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -19,6 +20,7 @@ class MapOptionsView: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.clearColor()
@@ -95,15 +97,30 @@ class MapOptionsView: UIViewController, UITableViewDataSource, UITableViewDelega
 //        return true
 //    }
 //    */
-//
-//    /*
-//    // MARK: - Navigation
-//
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        // Get the new view controller using [segue destinationViewController].
-//        // Pass the selected object to the new view controller.
-//    }
-//    */
+
+     //MARK: - Navigation
+
+    //In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+         // Get the new view controller using [segue destinationViewController].
+         // Pass the selected object to the new view controller.
+    }
 
 }
+
+extension MapOptionsView {
+    
+    // manage map preferences/settings
+    
+    func updateMapPreferences() {
+        println("did save preferences")
+        // iterate through each preference and determine/save its value (switch is on or off) (don't iterate through the table, this is only a visual representation) 
+    }
+
+
+}
+
+
+
+
+

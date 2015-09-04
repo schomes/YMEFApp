@@ -15,9 +15,14 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Foundation
+
 
 class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
+    // get user preferences
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
     @IBOutlet weak var mapView: MKMapView!
     
     /**
@@ -43,6 +48,9 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // check and set user default settings if empty
+        checkMapSettingsAndSetIfEmpty()
         
         mapView.delegate = self
         
@@ -142,7 +150,7 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
         print("Errors: \(error.localizedDescription)")
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -150,6 +158,23 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
+
+}
+
+extension mapContainerViewController {
+    
+    /**
+
+    */
+    func checkMapSettingsAndSetIfEmpty() {
+        if defaults.objectForKey("showCampusConnectorStops") == nil {
+            println("is nil")
+            // set default value (showCampusConnectorStops == True)
+        }
+    }
+    
+//    if objectForKey == nil {
+//    
+//    }
 }
