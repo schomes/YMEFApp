@@ -38,7 +38,9 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
         
         // this URL doesn't work because squarespace needs you to login; we will wait for the website to be published
         // this may also be the cause of NSXMLParserErrorDomain Code = 76 (we're not displaying xml--no valid opening and closing tags)
-        var urlString = "https://samantha-marlow.squarespace.com/config#/%7C/blog?format=rss"
+//        var urlString = "https://samantha-marlow.squarespace.com/config#/%7C/blog?format=rss"
+        var urlString = "https://samantha-marlow.squarespace.com/blog?format=rss"
+
 
         var url = NSURL(string: urlString)
         
@@ -96,7 +98,10 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
         }
         
         // add 'elements' dictionary to 'feeds' list
-        feeds.addObject(elements)
+        if elementName == "item" {
+            feeds.addObject(elements)
+        }
+        
     }
     
     func parser(parser: NSXMLParser, foundCharacters string: String?) {
@@ -115,6 +120,7 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
     func parserDidEndDocument(parser: NSXMLParser) {
         // reload table view
         self.tableView.reloadData()
+        println("\(feeds)")
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
@@ -148,6 +154,7 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
         cell.textLabel?.text = feeds.objectAtIndex(indexPath.row).objectForKey("title") as? String
         cell.detailTextLabel?.numberOfLines = 3
         cell.detailTextLabel?.text = feeds.objectAtIndex(indexPath.row).objectForKey("description") as? String
+        cell.imageView?.image = UIImage(named: "logo_YMEF.png")
 
         return cell
     }
