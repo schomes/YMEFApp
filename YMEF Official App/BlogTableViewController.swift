@@ -127,6 +127,16 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
         print("parse error: \(parseError)")
     }
     
+    
+    /**
+        Get an image located by the specified URL
+
+        :param: url A URL which points to an image
+    */
+    func getImageFromURL(url: NSURL) {
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -157,6 +167,33 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
         cell.imageView?.image = UIImage(named: "logo_YMEF.png")
 
         return cell
+    }
+    
+    // MARK: - Navigation
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = feeds[indexPath.row] as! NSMutableDictionary
+        
+        let blogPostView: UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("blogPost") as! UIViewController
+        
+//        self.navigationController?.pushViewController(blogPostView, animated: true)
+//        self.performSegueWithIdentifier("BlogPostSegue", sender: "")
+
+        
+    }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        
+        var vc = segue.destinationViewController as! BlogPostViewController
+        
+        let blogPostTitle = sender!.textLabel!!.text
+        
+        vc.testText = blogPostTitle
+        
+        
     }
 
     
@@ -205,14 +242,7 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

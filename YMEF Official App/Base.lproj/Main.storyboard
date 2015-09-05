@@ -292,6 +292,39 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
             </objects>
             <point key="canvasLocation" x="2157" y="684"/>
         </scene>
+        <!--Blog Post View Controller-->
+        <scene sceneID="NXd-8z-Kz3">
+            <objects>
+                <viewController storyboardIdentifier="blogPost" id="7GK-df-Q0M" customClass="BlogPostViewController" customModule="YMEF_Official_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WKv-si-fUZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="PYd-cj-zZo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PwH-L6-sxE">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wy2-K7-GDe">
+                                <rect key="frame" x="234" y="106" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Wy2-K7-GDe" secondAttribute="centerX" id="E2E-MP-moc"/>
+                            <constraint firstItem="Wy2-K7-GDe" firstAttribute="top" secondItem="WKv-si-fUZ" secondAttribute="bottom" constant="42" id="iZk-B2-hai"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blogPostTitle" destination="Wy2-K7-GDe" id="XhC-LD-Fjy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7D-G4-94u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="1434"/>
+        </scene>
         <!--Blog Table View Controller-->
         <scene sceneID="epP-O9-YVz">
             <objects>
@@ -320,6 +353,9 @@ YMEF is a student-led foundation dedicated to supporting musical education and t
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="7GK-df-Q0M" kind="show" identifier="BlogPostSegue" id="LV5-5T-iII"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
