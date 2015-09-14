@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5318E0A91B72EFEE00967FD9 /* mapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */; };
-		5318E0AB1B754EF300967FD9 /* webDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0AA1B754EF300967FD9 /* webDataHandler.swift */; };
 		5318E0AD1B80134500967FD9 /* BlogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0AC1B80134500967FD9 /* BlogTableViewController.swift */; };
 		5318E0AF1B8176AF00967FD9 /* MapOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318E0AE1B8176AF00967FD9 /* MapOptionsView.swift */; };
 		53343F081B9B73B300FB77DF /* BlogPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53343F071B9B73B300FB77DF /* BlogPostViewController.swift */; };
@@ -18,9 +17,9 @@
 		53912E7B1B17E63900100F5A /* YMEF_Official_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53912E7A1B17E63900100F5A /* YMEF_Official_AppTests.swift */; };
 		53FF8A181B90046D00A30DCC /* CampusConnectorStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF8A171B90046D00A30DCC /* CampusConnectorStop.swift */; };
 		53FF8A1A1B90091E00A30DCC /* AnnotationsForMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF8A191B90091E00A30DCC /* AnnotationsForMapView.swift */; };
+		CC088E321BA6C93600377879 /* webDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC088E311BA6C93600377879 /* webDataHandler.swift */; };
 		CCE8945A1B7E95F800A5001E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE894591B7E95F800A5001E /* Images.xcassets */; };
 		CCE8945C1B7EFAA100A5001E /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE8945B1B7EFAA100A5001E /* infoViewController.swift */; };
-		CCF4E4461B740D140008D9C5 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF4E4451B740D140008D9C5 /* BlogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,6 @@
 
 /* Begin PBXFileReference section */
 		5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapContainerViewController.swift; sourceTree = "<group>"; };
-		5318E0AA1B754EF300967FD9 /* webDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webDataHandler.swift; sourceTree = "<group>"; };
 		5318E0AC1B80134500967FD9 /* BlogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewController.swift; sourceTree = "<group>"; };
 		5318E0AE1B8176AF00967FD9 /* MapOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOptionsView.swift; sourceTree = "<group>"; };
 		53343F071B9B73B300FB77DF /* BlogPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlogPostViewController.swift; path = ../BlogPostViewController.swift; sourceTree = "<group>"; };
@@ -49,9 +47,9 @@
 		53912E7A1B17E63900100F5A /* YMEF_Official_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMEF_Official_AppTests.swift; sourceTree = "<group>"; };
 		53FF8A171B90046D00A30DCC /* CampusConnectorStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampusConnectorStop.swift; sourceTree = "<group>"; };
 		53FF8A191B90091E00A30DCC /* AnnotationsForMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationsForMapView.swift; sourceTree = "<group>"; };
+		CC088E311BA6C93600377879 /* webDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webDataHandler.swift; sourceTree = "<group>"; };
 		CCE894591B7E95F800A5001E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CCE8945B1B7EFAA100A5001E /* infoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
-		CCF4E4451B740D140008D9C5 /* BlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +93,9 @@
 			children = (
 				53912E621B17E63900100F5A /* AppDelegate.swift */,
 				53912E681B17E63900100F5A /* Main.storyboard */,
-				CCF4E4451B740D140008D9C5 /* BlogViewController.swift */,
 				53343F071B9B73B300FB77DF /* BlogPostViewController.swift */,
 				5318E0AC1B80134500967FD9 /* BlogTableViewController.swift */,
-				5318E0AA1B754EF300967FD9 /* webDataHandler.swift */,
+				CC088E311BA6C93600377879 /* webDataHandler.swift */,
 				5318E0AE1B8176AF00967FD9 /* MapOptionsView.swift */,
 				5318E0A81B72EFEE00967FD9 /* mapContainerViewController.swift */,
 				53FF8A191B90091E00A30DCC /* AnnotationsForMapView.swift */,
@@ -239,11 +236,10 @@
 				53343F081B9B73B300FB77DF /* BlogPostViewController.swift in Sources */,
 				53FF8A181B90046D00A30DCC /* CampusConnectorStop.swift in Sources */,
 				53912E631B17E63900100F5A /* AppDelegate.swift in Sources */,
-				5318E0AB1B754EF300967FD9 /* webDataHandler.swift in Sources */,
+				CC088E321BA6C93600377879 /* webDataHandler.swift in Sources */,
 				53FF8A1A1B90091E00A30DCC /* AnnotationsForMapView.swift in Sources */,
 				CCE8945C1B7EFAA100A5001E /* infoViewController.swift in Sources */,
 				5318E0A91B72EFEE00967FD9 /* mapContainerViewController.swift in Sources */,
-				CCF4E4461B740D140008D9C5 /* BlogViewController.swift in Sources */,
 				5318E0AD1B80134500967FD9 /* BlogTableViewController.swift in Sources */,
 				5318E0AF1B8176AF00967FD9 /* MapOptionsView.swift in Sources */,
 			);
