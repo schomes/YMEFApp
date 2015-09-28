@@ -12,7 +12,7 @@ import CoreLocation
 
 class CampusConnectorStop: NSObject, MKAnnotation {
     
-    let title: String
+    let title: String?
     let locationName: String
     let coordinate: CLLocationCoordinate2D
     let pinImage = UIImage(named: "map_icon-campus_connector_stop")
@@ -25,7 +25,7 @@ class CampusConnectorStop: NSObject, MKAnnotation {
         super.init()
     }
     
-    var subtitle: String {
+    var subtitle: String? {
         return "Next bus comes in ?? minutes."
     }
     

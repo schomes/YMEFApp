@@ -10,9 +10,9 @@ import Foundation
 
 import MapKit
 
-extension mapContainerViewController: MKMapViewDelegate {
+extension mapContainerViewController {
     
-    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView! {
         if let annotation = annotation as? CampusConnectorStop {
             // identifier so we don't mistakenly deque annotations of different styles
             let identifier = "pin"
@@ -26,7 +26,7 @@ extension mapContainerViewController: MKMapViewDelegate {
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y: 5)
-                view.rightCalloutAccessoryView = UIButton.buttonWithType(.DetailDisclosure) as! UIView
+                view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
             }
             view.image = annotation.pinImage!
             return view

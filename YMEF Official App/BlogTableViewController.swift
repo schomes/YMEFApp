@@ -44,7 +44,7 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
 
         var url = NSURL(string: urlString)
         
-        parser = NSXMLParser(contentsOfURL: url)!
+        parser = NSXMLParser(contentsOfURL: url!)!
         parser.delegate = self
         parser.shouldProcessNamespaces = false
         parser.shouldReportNamespacePrefixes = false
@@ -59,7 +59,7 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         // called when the parser object encounters a start tag for an element
         
         // name of element (tag)
@@ -68,13 +68,13 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
         // set up feed properties
         if (element as NSString).isEqualToString("item") {
             // create empty dictionary (with dictionary literal [:]); this allows us to empty the dictionary 'elements' if it still has data in it
-            elements = NSMutableDictionary.alloc()
+//            elements = NSMutableDictionary
             elements = [:]
-            ftitle = NSMutableString.alloc()
+//            ftitle = NSMutableString
             ftitle = ""
-            link = NSMutableString.alloc()
+//            link = NSMutableString
             link = ""
-            fdescription = NSMutableString.alloc()
+//            fdescription = NSMutableString
             fdescription = ""
             
         }
@@ -120,18 +120,18 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
     func parserDidEndDocument(parser: NSXMLParser) {
         // reload table view
         self.tableView.reloadData()
-        println("\(feeds)")
+        print("\(feeds)")
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
-        print("parse error: \(parseError)")
+        print("parse error: \(parseError)", terminator: "")
     }
     
     
     /**
         Get an image located by the specified URL
 
-        :param: url A URL which points to an image
+        - parameter url: A URL which points to an image
     */
     func getImageFromURL(url: NSURL) {
         
@@ -158,7 +158,7 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BlogCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("BlogCell", forIndexPath: indexPath) 
         
         // Configure the cell...
         cell.textLabel?.text = feeds.objectAtIndex(indexPath.row).objectForKey("title") as? String
@@ -174,7 +174,7 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let item = feeds[indexPath.row] as! NSMutableDictionary
         
-        let blogPostView: UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("blogPost") as! UIViewController
+        let blogPostView: UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("blogPost") as! UIViewController!
         
 //        self.navigationController?.pushViewController(blogPostView, animated: true)
 //        self.performSegueWithIdentifier("BlogPostSegue", sender: "")
@@ -187,7 +187,7 @@ class BlogTableViewController: UITableViewController, NSXMLParserDelegate {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
         
-        var vc = segue.destinationViewController as! BlogPostViewController
+        let vc = segue.destinationViewController as! BlogPostViewController
         
         let blogPostTitle = sender!.textLabel!!.text
         

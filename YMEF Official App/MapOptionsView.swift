@@ -57,7 +57,7 @@ class MapOptionsView: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("optionsCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("optionsCell", forIndexPath: indexPath) 
 
         let option = options[indexPath.row]
         cell.textLabel?.text = option
@@ -116,8 +116,8 @@ extension MapOptionsView {
     // manage map preferences/settings
     
     // update preference everytime a switch is toggled; use the string (title) to determine which one and switch value to determine preference value
-    func updateMapPreferenceForKey(key: String, preferenceIsEnabled: Boolean) {
-        println("did save preferences")
+    func updateMapPreferenceForKey(key: String, preferenceIsEnabled: DarwinBoolean) {
+        print("did save preferences")
         
         // iterate through each preference and determine/save its value (switch is on or off) (don't iterate through the table, this is only a visual representation) 
     }

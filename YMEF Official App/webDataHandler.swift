@@ -48,7 +48,7 @@ class HTTPFetcher {
     
         Get JSON from URL
         
-        :param: url URL of JSON data
+        - parameter url: URL of JSON data
 
     */
     func getJSON(url: NSURL) {
@@ -64,7 +64,7 @@ class HTTPFetcher {
             
             if error != nil {
                 // if there is an error in the web request, print to console
-                println(error.localizedDescription)
+                print(error!.localizedDescription)
             }
             
             var err: NSError?
@@ -72,17 +72,17 @@ class HTTPFetcher {
             // use data for json
             // options: MutableContainers specifies that arrays/dictionaries are mutable objects
             // if an error occurs, save that in err (above)
-            var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as! NSDictionary
+            let jsonResult = (try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
             
             // if an error occured when creating jsonResult
             if err != nil {
-                println("JSON error: \(err!.localizedDescription)")
+                print("JSON error: \(err!.localizedDescription)")
             }
             
             // test JSON
             if let item: AnyObject = jsonResult["website"] {
                 if let jsonID: AnyObject = item["id"] {
-                    print("Test: id is " + (jsonID as! String))
+                    print("Test: id is " + (jsonID as! String), terminator: "")
                 }
             }
         })

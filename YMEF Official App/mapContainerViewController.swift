@@ -40,7 +40,7 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
     */
     @IBAction func showMapOptions(sender: AnyObject) {
         
-        let optionsView = self.storyboard!.instantiateViewControllerWithIdentifier("MapOptionsView") as! UIViewController
+        let optionsView = self.storyboard!.instantiateViewControllerWithIdentifier("MapOptionsView") 
         optionsView.view.backgroundColor = UIColor.clearColor()
         optionsView.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
         self.presentViewController(optionsView, animated: true, completion: nil)
@@ -55,7 +55,7 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
         mapView.delegate = self
         
         // add YMEF logo to top of view (in the navigation bar)
-        var image = UIImage(named: "logo_YMEF.png")
+        let image = UIImage(named: "logo_YMEF.png")
         self.navigationItem.titleView = UIImageView(image: image)
         
         // initial location to show on map (University of Minnesota campus)
@@ -78,7 +78,7 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
         
         Centers the MapView at the given location
     
-        :param: location Location to center the map
+        - parameter location: Location to center the map
     */
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
@@ -137,8 +137,8 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
     
     // MARK: - Delegate Methods for Location
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        let location = locations.last as! CLLocation
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last as CLLocation!
         
         centerMapOnLocation(location)
         
@@ -146,8 +146,8 @@ class mapContainerViewController: UIViewController, MKMapViewDelegate, CLLocatio
     }
     
     
-    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-        print("Errors: \(error.localizedDescription)")
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("Errors: \(error.localizedDescription)", terminator: "")
     }
     
     
@@ -171,7 +171,7 @@ extension mapContainerViewController {
     func checkMapSettingsAndSetIfEmpty() {
         for preference in MapOptionsView.preferenceKeys {
             if defaults.objectForKey(preference) == nil {
-                println("set default value \(preference)")
+                print("set default value \(preference)")
                 defaults.setBool(true, forKey: preference)
                 // set default value (showCampusConnectorStops == True)
             }

@@ -27,10 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
-        var navigationBarAppearance = UINavigationBar.appearance()
+        let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.barTintColor = uicolorFromHex(0x273845)
         
-        var tabBarAppearance = UITabBar.appearance()
+        let tabBarAppearance = UITabBar.appearance()
         tabBarAppearance.barTintColor = uicolorFromHex(0x273845)
         tabBarAppearance.tintColor = uicolorFromHex(0xFFFFFF)
 
